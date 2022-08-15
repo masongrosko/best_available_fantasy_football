@@ -16,24 +16,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          working-directory: ./docs
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
+          working-directory: ./docs
           hugo-version: 'latest'
           extended: true
 
       - name: Setup Go
         uses: actions/setup-go@v3
         with:
+          working-directory: ./docs
           go-version-file: go.mod
           check-latest: false
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
+          working-directory: ./docs
           node-version: '18.x'
 
       - name: NPM Prep
@@ -50,6 +54,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          working-directory: ./docs
           allow_empty_commit: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
