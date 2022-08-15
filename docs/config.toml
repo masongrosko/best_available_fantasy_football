@@ -12,7 +12,7 @@ canonifyURLS = true
   editURL = "https://github.com/masongrosko/best_available_fantasy_football/edit/source/docs/content"
 
   github_repo = "https://github.com/masongrosko/best_available_fantasy_football"
-  github_branch = "master"
+  github_branch = "main"
   github_subdir = "docs"
 
   offlineSearch = true
