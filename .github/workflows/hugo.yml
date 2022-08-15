@@ -31,7 +31,10 @@ jobs:
           node-version: '12.x'
 
       - name: NPM Prep
-        run: npm install npm;npm install postcss postcss-cli autoprefixer
+        run: npm install npm
+
+      - name: NPM Packages
+        run: npm -g install postcss postcss-cli autoprefixer
 
       - name: Build
         run: hugo
