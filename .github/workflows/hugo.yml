@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -32,6 +32,9 @@ jobs:
 
       - name: NPM Prep
         run: npm install npm
+
+      - name: NPM Packages
+        run: npm install postcss postcss-cli autoprefixer
 
       - name: Cache go.sum
         uses: actions/cache@v2
