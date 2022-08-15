@@ -130,7 +130,12 @@ dmypy.json
 
 # Hugo stuff
 /docs/resources
+/public
+/docs/public
+/docs/package*.json
 /docs/.hugo_build.lock
+/docs/go.sum
+**/node_modules/**
 
 # rankings
-rankings/bdge_rankings/**
+/rankings/bdge_rankings/**

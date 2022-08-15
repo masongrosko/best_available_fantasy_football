@@ -1,8 +1,0 @@
-const navbarBurger = document.getElementById('mobile-navbar-burger');
-
-navbarBurger.addEventListener('click', () => {
-
-  target = navbarBurger.dataset.target
-  navbarBurger.classList.toggle('is-active');
-  document.getElementById(target).classList.toggle('is-active');
-})

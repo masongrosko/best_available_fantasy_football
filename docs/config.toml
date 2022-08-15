@@ -1,12 +1,12 @@
 baseUrl = "https://masongrosko.github.io/best_available_fantasy_football/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-publishDir = "public"
+publishDir = "../public"
 title = "Fantasy Football - 2022"
 
 enableGitInfo = true
 
-canonifyURLS = true
+canonifyURLs = true
 
 [params]
   editURL = "https://github.com/masongrosko/best_available_fantasy_football/edit/source/docs/content"
@@ -19,7 +19,7 @@ canonifyURLS = true
   offlineSearchSummaryLength = 100
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
 
 # Docsy settings
 [module]
