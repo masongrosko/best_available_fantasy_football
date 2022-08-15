@@ -1,0 +1,26 @@
+.footer {
+  padding: 0;
+  margin-top: auto;
+}
+
+.icon-twitter {
+  color: #1DA1F2;
+}
+.icon-instagram {
+  color: #bc2a8d;
+}
+
+.icon-podcast {
+  color: #8a3ab9;
+}
+.icon-youtube {
+  color: #FF0000;
+}
+
+.icon-tiktok img {
+  height: 2rem;
+}
+
+.fake-navbar-container.columns {
+  margin:0;
+}

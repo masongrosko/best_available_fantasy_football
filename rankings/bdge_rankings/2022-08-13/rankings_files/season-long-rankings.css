@@ -1,0 +1,33 @@
+.draggable {
+  cursor: grab;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+
+.short td{ 
+  font-size: .9rem;
+}
+
+.tag {
+  width: 4em;
+  font-size: .5rem !important;
+}
+
+.last-updated {
+  margin-left: -.75px;
+  font-size: .7em;
+}
+
+.tag:not(body) {
+  font-size: .75rem !important;
+}
+
+.abbr-tooltip:hover {
+  cursor: help;
+}
+
+.table-element-defaults-to-hidden {
+  display: none;
+}

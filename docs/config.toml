@@ -1,0 +1,35 @@
+baseUrl = "https://pages.github.com/masongrosko/best_available_fantasy_football/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+publishDir = "public"
+title = "Fantasy Football - 2022"
+
+enableGitInfo = true
+
+canonifyURLS = true
+
+[params]
+  editURL = "https://pages.github.com/masongrosko/best_available_fantasy_football/edit/source/docs/content"
+
+  github_repo = "https://github.com/masongrosko/best_available_fantasy_football"
+  github_branch = "master"
+  github_subdir = "docs"
+
+  offlineSearch = true
+  offlineSearchSummaryLength = 100
+
+[markup.goldmark.renderer]
+unsafe= true
+
+# Docsy settings
+[module]
+  proxy = "direct"
+  [module.hugoVersion]
+    extended = true
+    min = "0.100.0"
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+    disable = false
