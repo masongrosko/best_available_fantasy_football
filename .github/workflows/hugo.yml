@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 'latest'
+          node-version: '18.x'
 
       - name: NPM Prep
         run: npm install npm
