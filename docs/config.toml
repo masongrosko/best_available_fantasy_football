@@ -1,4 +1,4 @@
-baseUrl = "https://masongrosko.github.io/best_available_fantasy_football/"
+baseUrl = "https://masongrosko.github.io/best_available_fantasy_football"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 publishDir = "public"
@@ -9,7 +9,7 @@ enableGitInfo = true
 canonifyURLS = true
 
 [params]
-  editURL = "https://masongrosko.github.io/best_available_fantasy_football/edit/source/docs/content"
+  editURL = "https://github.com/masongrosko/best_available_fantasy_football/edit/source/docs/content"
 
   github_repo = "https://github.com/masongrosko/best_available_fantasy_football"
   github_branch = "master"
