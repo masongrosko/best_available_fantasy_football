@@ -14,7 +14,7 @@ jobs:
         working-directory: ./docs
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
@@ -25,6 +25,12 @@ jobs:
           hugo-version: 'latest'
           extended: true
           go-version-file: go.mod
+
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: go.mod
+          check-latest: false
 
       - name: Setup Node
         uses: actions/setup-node@v1
