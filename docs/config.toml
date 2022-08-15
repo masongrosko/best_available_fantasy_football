@@ -1,4 +1,4 @@
-baseUrl = "https://masongrosko.github.io/best_available_fantasy_football"
+baseUrl = "https://masongrosko.github.io/best_available_fantasy_football/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 publishDir = "public"
