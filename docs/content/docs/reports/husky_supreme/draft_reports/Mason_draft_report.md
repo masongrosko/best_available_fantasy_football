@@ -4,7 +4,7 @@ title: "Mason Draft Report"
 description: "2022 Draft Report for Mason"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![mason_rating_viz](../2ca0886f-c27a-41f6-88d1-968ef5ec9918.png)
+![mason_rating_viz](../de611f9f-8396-424f-a739-9eab91842178.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../9f0ac6a7-2d5a-41eb-bc5b-06e7c25f9c09.png)
+![adp_rating_viz](../9afeefca-1869-45b3-979e-951cc845440a.png)
 
 ## Great picks - Mason
 
@@ -113,20 +113,7 @@ Of the 15 players drafted by Mason, 3 picks ['Aaron Rodgers', 'Dawson Knox', 'Mi
 
 ## Reach picks - Mason
 
-Of the 15 players drafted by Mason, 0 picks [] were picked more than a full round earlier than expected.
-
-<table  class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Player Name</th>
-      <th>Overall Rank</th>
-      <th>Pick Number</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
+No reach picks found
 
 ## Reach picks - ADP
 

@@ -141,44 +141,53 @@ def main():
 
         report.append("## Reach picks - Mason")
         reach_picks = details.loc[details["bdge_diff"] < (-1 * round_len)]
-        report.append(
-            f"Of the {len(details)} players drafted by {drafter}, "
-            f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
-            f"{reach_picks['original_name'].to_list()} "
-            f"{'were' if len(reach_picks) != 1 else 'was'} "
-            f"picked more than a full round earlier than expected."
-        )
-        report.append(
-            reach_picks[["original_name", "Overall Rank", "pick_number"]]
-            .rename(columns=clean_names)
-            .reset_index(drop=True)
-            .to_html()
-        )
+        if len(reach_picks) == 0:
+            report.append("No reach picks found")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
+                f"{reach_picks['original_name'].to_list()} "
+                f"{'were' if len(reach_picks) != 1 else 'was'} "
+                f"picked more than a full round earlier than expected."
+            )
+            report.append(
+                reach_picks[["original_name", "Overall Rank", "pick_number"]]
+                .rename(columns=clean_names)
+                .reset_index(drop=True)
+                .to_html()
+            )
 
         report.append("## Reach picks - ADP")
         reach_picks = details.loc[details["adp_diff"] < (-1 * round_len)]
-        report.append(
-            f"Of the {len(details)} players drafted by {drafter}, "
-            f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
-            f"{reach_picks['original_name'].to_list()} "
-            f"{'were' if len(reach_picks) != 1 else 'was'} "
-            f"picked more than a full round earlier than expected."
-        )
-        report.append(
-            reach_picks[["original_name", "Overall Rank", "pick_number"]]
-            .rename(columns=clean_names)
-            .reset_index(drop=True)
-            .to_html()
-        )
+        if len(reach_picks) == 0:
+            report.append("No reach picks found")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
+                f"{reach_picks['original_name'].to_list()} "
+                f"{'were' if len(reach_picks) != 1 else 'was'} "
+                f"picked more than a full round earlier than expected."
+            )
+            report.append(
+                reach_picks[["original_name", "Overall Rank", "pick_number"]]
+                .rename(columns=clean_names)
+                .reset_index(drop=True)
+                .to_html()
+            )
 
         report.append("## Deep cut (BAD) picks")
         deep_cut_picks = details.loc[details["Name"].isna(), "original_name"].to_list()
-        report.append(
-            f"Of the {len(details)} players drafted by {drafter}, "
-            f"{len(deep_cut_picks)} {'picks' if len(deep_cut_picks) != 1 else 'pick'} "
-            f"{deep_cut_picks} {'were' if len(deep_cut_picks) > 1 else 'was'} "
-            f"not even found in the provided rankings as a viable candidate!"
-        )
+        if len(reach_picks) == 0:
+            report.append("No deep cut picks found")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(deep_cut_picks)} {'picks' if len(deep_cut_picks) != 1 else 'pick'} "
+                f"{deep_cut_picks} {'were' if len(deep_cut_picks) > 1 else 'was'} "
+                f"not even found in the provided rankings as a viable candidate!"
+            )
 
         report.append("## Pick by pick breakdown")
 

@@ -4,7 +4,7 @@ title: "Devin Draft Report"
 description: "2022 Draft Report for Devin"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../1bfb1fda-7148-4779-add7-244c908b7634.png)
+![mason_rating_viz](../41c1e8b7-9d15-4938-935a-644ec637ecaf.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../a857dbcd-7ec7-4cb8-b384-07d1afeb8ee0.png)
+![adp_rating_viz](../fec0a6da-ec65-4f70-920c-aaf527f58db6.png)
 
 ## Great picks - Mason
 

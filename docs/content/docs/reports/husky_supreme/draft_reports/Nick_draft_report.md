@@ -4,7 +4,7 @@ title: "Nick Draft Report"
 description: "2022 Draft Report for Nick"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![mason_rating_viz](../03ea0684-6428-4875-ba19-4e8e28ab2c4b.png)
+![mason_rating_viz](../f74e5ae1-8f6c-4b93-9a1d-cc027adc4da0.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![adp_rating_viz](../347be168-dd53-4b49-b5d6-f1c6d388cb6c.png)
+![adp_rating_viz](../18c5da32-9e92-4009-b056-ebbf553589c7.png)
 
 ## Great picks - Mason
 

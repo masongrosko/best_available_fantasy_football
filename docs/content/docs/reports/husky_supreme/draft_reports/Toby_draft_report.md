@@ -4,7 +4,7 @@ title: "Toby Draft Report"
 description: "2022 Draft Report for Toby"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../b6cda0ef-8a17-4ec8-9b55-57ccedb7ce1b.png)
+![mason_rating_viz](../8a846e28-3b5d-4069-8bba-40aa4f22bbfe.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![adp_rating_viz](../29495616-3ff1-41fc-b2c7-d282ed09fa46.png)
+![adp_rating_viz](../a93e7672-eecc-41ff-8610-25b74b57ca25.png)
 
 ## Great picks - Mason
 

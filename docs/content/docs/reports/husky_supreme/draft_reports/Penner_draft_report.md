@@ -4,7 +4,7 @@ title: "Penner Draft Report"
 description: "2022 Draft Report for Penner"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![mason_rating_viz](../2a5b84b8-d5ac-4614-9d7b-15fc73badf8a.png)
+![mason_rating_viz](../09db8a97-5489-44b8-a7f1-b558aac8689a.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../4428abf3-2e6c-4be1-8657-14fe67fa3a48.png)
+![adp_rating_viz](../fcaf5d27-67a8-4e1f-9750-26fb14f09636.png)
 
 ## Great picks - Mason
 

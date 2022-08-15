@@ -4,7 +4,7 @@ title: "Sam N Draft Report"
 description: "2022 Draft Report for Sam N"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../ce7b4232-d5e9-41af-a773-0ac5d7486528.png)
+![mason_rating_viz](../a6c93573-5005-412e-a935-bc66291b88d8.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../b4837673-da08-4fff-9b33-1c22238858dc.png)
+![adp_rating_viz](../54a17d22-9b10-4b4a-95f5-0fd0a7dca770.png)
 
 ## Great picks - Mason
 

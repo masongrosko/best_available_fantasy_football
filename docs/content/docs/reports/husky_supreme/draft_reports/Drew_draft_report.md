@@ -4,7 +4,7 @@ title: "Drew Draft Report"
 description: "2022 Draft Report for Drew"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../d7f39096-1d6d-4769-8a3b-56308de0b40f.png)
+![mason_rating_viz](../9966ba12-4dc2-45b6-be99-efb57dbef1ae.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![adp_rating_viz](../e19e6a04-c449-4897-94f3-9398f8b33839.png)
+![adp_rating_viz](../b7f13de9-278c-402d-a03c-3dedaa226276.png)
 
 ## Great picks - Mason
 

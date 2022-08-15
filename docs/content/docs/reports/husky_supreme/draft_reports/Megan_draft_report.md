@@ -4,7 +4,7 @@ title: "Megan Draft Report"
 description: "2022 Draft Report for Megan"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![mason_rating_viz](../097ac0d5-5e0d-4453-bf64-05b6848fb109.png)
+![mason_rating_viz](../e5f10d19-b18a-4522-b5cf-3f2e036a19f6.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../48f32d21-1818-4aab-a1ca-d16fa8e48d34.png)
+![adp_rating_viz](../58982f45-7f77-4c31-ac21-caeb39e5cd62.png)
 
 ## Great picks - Mason
 

@@ -4,7 +4,7 @@ title: "Shouse Draft Report"
 description: "2022 Draft Report for Shouse"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../647e9721-6770-4cf9-8215-694a6a84b394.png)
+![mason_rating_viz](../6f2b068e-80c4-4479-8fa7-518b992823bc.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![adp_rating_viz](../8640fa63-2b8e-400e-a84a-ddde740cd981.png)
+![adp_rating_viz](../9515c34b-d19c-43f7-85ee-25c1a1832322.png)
 
 ## Great picks - Mason
 

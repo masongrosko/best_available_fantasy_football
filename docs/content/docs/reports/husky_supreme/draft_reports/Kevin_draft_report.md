@@ -4,7 +4,7 @@ title: "Kevin Draft Report"
 description: "2022 Draft Report for Kevin"
 weight: 50
 ---
-#### Draft review as of 2022-08-14
+#### Draft review as of 2022-08-15
 ## Overall Rating
 
 ### Mason
@@ -13,7 +13,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![mason_rating_viz](../2886a360-dc09-47ab-b190-f349e2dd7624.png)
+![mason_rating_viz](../d9fe9457-95e8-40cc-8170-add7442f4cdf.png)
 
 ### ADP
 
@@ -21,7 +21,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![adp_rating_viz](../ce0b33ca-6867-4af3-83ca-7cd0b6d3b50a.png)
+![adp_rating_viz](../9fed6c7c-314c-4825-b312-4f7cb4b01813.png)
 
 ## Great picks - Mason
 
