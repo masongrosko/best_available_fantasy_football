@@ -38,6 +38,7 @@ def main():
     )
 
     merged = bdge_table.merge(draft_table, how="outer", left_on="Name", right_on="pick")
+    merged = merged.sort_values(by="pick_number")
 
     merged["bdge_diff"] = merged["pick_number"] - merged["Overall Rank"].astype(float)
     merged["adp_diff"] = merged["pick_number"] - merged["ADP"].astype(float)
@@ -53,17 +54,17 @@ def main():
         # "pick",
         "drafter": "Drafter",
         "original_name": "Player Name",
-        # "bdge_diff",
-        # "adp_diff",
+        "bdge_diff": "Overall Delta",
+        "adp_diff": "ADP Delta",
     }
 
     grades = {
-        "A+": (10, "![A+](/images/draft_grades/a_plus.png)"),
+        "A+": (5, "![A+](/images/draft_grades/a_plus.png)"),
         "A": (0, "![A](/images/draft_grades/a.png)"),
-        "B": (-10, "![B](/images/draft_grades/b.png)"),
-        "C": (-20, "![C](/images/draft_grades/c.png)"),
-        "D": (-30, "![D](/images/draft_grades/d.png)"),
-        "F": (-40, "![F](/images/draft_grades/f.png)"),
+        "B": (-5, "![B](/images/draft_grades/b.png)"),
+        "C": (-10, "![C](/images/draft_grades/c.png)"),
+        "D": (-15, "![D](/images/draft_grades/d.png)"),
+        "F": (-20, "![F](/images/draft_grades/f.png)"),
     }
 
     def get_grade(score, grades=grades):
@@ -83,10 +84,10 @@ def main():
         report.append(f"{get_grade(details['bdge_diff'].mean())}")
         fig_name = f"{uuid.uuid4()}.png"
         details.reset_index()["bdge_diff"].plot.bar(
-            color=(details["bdge_diff"] > 0).map({True: "tab:blue", False: "tab:orange"})
-        ).get_figure().savefig(
-            reports_path / fig_name
-        )
+            color=(details["bdge_diff"] > 0).map(
+                {True: "tab:blue", False: "tab:orange"}
+            )
+        ).get_figure().savefig(reports_path / fig_name)
         plt.cla()
         report.append(f"![mason_rating_viz](../{fig_name})")
 
@@ -95,9 +96,7 @@ def main():
         fig_name = f"{uuid.uuid4()}.png"
         details.reset_index()["adp_diff"].plot.bar(
             color=(details["adp_diff"] > 0).map({True: "tab:blue", False: "tab:orange"})
-        ).get_figure().savefig(
-            reports_path / fig_name
-        )
+        ).get_figure().savefig(reports_path / fig_name)
         plt.cla()
         report.append(f"![adp_rating_viz](../{fig_name})")
 
@@ -133,7 +132,7 @@ def main():
                 f"picked more than a full round later than expected."
             )
             report.append(
-                great_picks[["original_name", "Overall Rank", "pick_number"]]
+                great_picks[["original_name", "ADP", "pick_number"]]
                 .rename(columns=clean_names)
                 .reset_index(drop=True)
                 .to_html()
@@ -171,7 +170,7 @@ def main():
                 f"picked more than a full round earlier than expected."
             )
             report.append(
-                reach_picks[["original_name", "Overall Rank", "pick_number"]]
+                reach_picks[["original_name", "ADP", "pick_number"]]
                 .rename(columns=clean_names)
                 .reset_index(drop=True)
                 .to_html()
@@ -196,6 +195,25 @@ def main():
 
             report.append(
                 f"### {pick_details['original_name']} - {pick_details['pick_number']}"
+            )
+
+            report.append(
+                pick_details[
+                    [
+                        "original_name",
+                        "Team",
+                        "pick_number",
+                        "Overall Rank",
+                        "ADP",
+                        "Positional Rank",
+                        "bdge_diff",
+                        "adp_diff",
+                    ]
+                ]
+                .rename(clean_names)
+                .to_frame()
+                .T
+                .to_html()
             )
 
             better_picks = merged.loc[
