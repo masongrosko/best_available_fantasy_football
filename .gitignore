@@ -134,4 +134,4 @@ dmypy.json
 /docs/go.sum
 
 # rankings
-rankings/bdge_rankings
+/rankings/bdge_rankings
