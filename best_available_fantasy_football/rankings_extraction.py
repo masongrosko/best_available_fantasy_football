@@ -6,8 +6,16 @@ from pathlib import Path
 from typing import Union
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+from enum import Enum
 
 PathLike = Union[Path, str]
+
+
+class DraftType(Enum):
+    """Type of draft."""
+
+    SUPERFLEX = 0
+    SINGLE_QB = 1
 
 
 class DraftOrderExtractor(ABC):
@@ -20,6 +28,10 @@ class DraftOrderExtractor(ABC):
 
 class BDGEDraftOrderExtractor(DraftOrderExtractor):
     """Extract draft order from provided BDGE file into a dataframe."""
+
+    def __init__(self, draft_type: DraftType = DraftType.SUPERFLEX):
+        """Initialize BDGE Draft Order Extractor."""
+        self.draft_type: DraftType = draft_type
 
     def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
         """Extract draft order from provided file into a dataframe."""
@@ -40,12 +52,12 @@ class BDGEDraftOrderExtractor(DraftOrderExtractor):
 
         # Parse the data
         soup = BeautifulSoup(html, features="lxml")
-        table = soup.find(
+        table = soup.find_all(
             "table",
             attrs={
                 "class": "table is-hoverable is-fullwidth is-striped has-sticky-header"
             },
-        )
+        )[self.draft_type.value]
         if not isinstance(table, Tag):
             raise ValueError(f"Could not find draft order for {html_file}")
 
@@ -78,11 +90,7 @@ class ManualDraftOrderExtractor(DraftOrderExtractor):
         """Extract draft order from provided file into a dataframe."""
         base_file = pd.read_csv(file_path, index_col=0)
 
-        out_data = {
-            "pick_number": [],
-            "pick": [],
-            "drafter": []
-        }
+        out_data = {"pick_number": [], "pick": [], "drafter": []}
         for row in base_file.iterrows():
             draft_round = int(row[0])
             drafts = row[1]
@@ -95,5 +103,26 @@ class ManualDraftOrderExtractor(DraftOrderExtractor):
                 out_data["drafter"].append(i[0])
                 out_data["pick"].append(i[1])
                 out_data["pick_number"].append(round_start + n)
+
+        return pd.DataFrame(out_data)
+
+
+class EspnDraftOrderExtractor(DraftOrderExtractor):
+    """Extractor for draft order files from espn."""
+
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        """Extract draft order from provided file into a dataframe."""
+        base_file = pd.read_csv(file_path)
+        base_file["team"] = base_file["team"].str.replace(r"\s+", "_", regex=True)
+
+        out_data = {"pick_number": [], "pick": [], "drafter": []}
+        for row in base_file.iterrows():
+            pick_number = int(row[0]) + 1
+            drafts = row[1]
+            pick = " ".join(drafts["player"].split(",")[0].split(" ")[:-1])
+
+            out_data["drafter"].append(drafts["team"])
+            out_data["pick"].append(pick)
+            out_data["pick_number"].append(pick_number)
 
         return pd.DataFrame(out_data)
