@@ -7,19 +7,43 @@ import uuid
 import matplotlib.pyplot as plt
 
 from best_available_fantasy_football.rankings_extraction import (
+    DraftType,
     BDGEDraftOrderExtractor,
     ManualDraftOrderExtractor,
+    EspnDraftOrderExtractor,
 )
+
+
+def husky_supreme():
+    """Return the husky supreme rating."""
+    draft_picks = Path("rankings/draft_day/2022-08-13.csv")
+    draft_table = ManualDraftOrderExtractor().extract_draft_order(draft_picks)
+    bdge_ratings = Path("rankings/bdge_rankings/2022-08-13/rankings.html")
+    bdge_table = BDGEDraftOrderExtractor(DraftType.SUPERFLEX).extract_draft_order(
+        bdge_ratings
+    )
+    reports_path = Path("docs/content/docs/reports/husky_supreme/draft_reports")
+
+    return draft_table, bdge_table, reports_path
+
+
+def grosko_and_co():
+    """Return the grosko-and-co rating."""
+    draft_picks = Path("rankings/draft_day/grosko_and_co.csv")
+    draft_table = EspnDraftOrderExtractor().extract_draft_order(draft_picks)
+    bdge_ratings = Path("rankings/bdge_rankings/2022-08-23/rankings.html")
+    bdge_table = BDGEDraftOrderExtractor(DraftType.SINGLE_QB).extract_draft_order(
+        bdge_ratings
+    )
+    reports_path = Path("docs/content/docs/reports/grosko_and_co/draft_reports")
+
+    return draft_table, bdge_table, reports_path
 
 
 def main():
     """Sample script."""
-    draft_picks = Path("rankings/draft_day/2022-08-13.csv")
-    bdge_ratings = Path("rankings/bdge_rankings/2022-08-13/rankings.html")
-    reports_path = Path("docs/content/docs/reports/husky_supreme/draft_reports")
-
-    bdge_table = BDGEDraftOrderExtractor().extract_draft_order(bdge_ratings)
-    draft_table = ManualDraftOrderExtractor().extract_draft_order(draft_picks)
+    # draft_table, bdge_table, reports_path = husky_supreme()
+    draft_table, bdge_table, reports_path = grosko_and_co()
 
     bdge_table["Name"] = (
         bdge_table["Name"]
@@ -212,8 +236,7 @@ def main():
                 ]
                 .rename(clean_names)
                 .to_frame()
-                .T
-                .to_html()
+                .T.to_html()
             )
 
             better_picks = merged.loc[
