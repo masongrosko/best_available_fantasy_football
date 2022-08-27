@@ -1,12 +1,13 @@
 """Pull rankings into a dataframe."""
 
-import pandas as pd
 from abc import ABC, abstractmethod
+from enum import Enum
 from pathlib import Path
 from typing import Union
+
+import pandas as pd
 from bs4 import BeautifulSoup
 from bs4.element import Tag
-from enum import Enum
 
 PathLike = Union[Path, str]
 
@@ -28,6 +29,35 @@ class DraftOrderExtractor(ABC):
 
 class BDGEDraftOrderExtractor(DraftOrderExtractor):
     """Extract draft order from provided BDGE file into a dataframe."""
+
+    def __init__(self, draft_type: DraftType = DraftType.SUPERFLEX):
+        """Initialize BDGE Draft Order Extractor."""
+        self.draft_type: DraftType = draft_type
+
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        """Extract draft order from provided file into a dataframe."""
+        file_type = Path(file_path).suffix
+
+        if file_type == ".csv":
+            extractor = _BDGEcsvDraftOrderExtractor()
+        elif file_type == ".html":
+            extractor = _BDGEhtmlDraftOrderExtractor(self.draft_type)
+        else:
+            raise ValueError(f"file type: {file_type} not supported.")
+
+        return extractor.extract_draft_order(file_path)
+
+
+class _BDGEcsvDraftOrderExtractor(DraftOrderExtractor):
+    """Extract draft order from provided BDGE csv file into a dataframe."""
+
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        """Extract draft order from provided file into a dataframe."""
+        return pd.read_csv(file_path)
+
+
+class _BDGEhtmlDraftOrderExtractor(DraftOrderExtractor):
+    """Extract draft order from provided BDGE html file into a dataframe."""
 
     def __init__(self, draft_type: DraftType = DraftType.SUPERFLEX):
         """Initialize BDGE Draft Order Extractor."""
