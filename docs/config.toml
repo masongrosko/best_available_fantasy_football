@@ -18,6 +18,9 @@ canonifyURLs = true
   offlineSearch = true
   offlineSearchSummaryLength = 100
 
+  [params.ui]
+    sidebar_menu_compact = true
+
 [markup.goldmark.renderer]
 unsafe = true
 
