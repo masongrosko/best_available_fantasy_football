@@ -139,3 +139,12 @@ dmypy.json
 
 # rankings
 /rankings/bdge_rankings/**
+backup.csv
+drafted_backup.csv
+elevenlabs_secret.json
+fantasy_data_secrets.json
+gpt_secret.json
+images/nfl-draft-image.png
+recordings/**
+secrets.json
+yahoo_secrets.json
