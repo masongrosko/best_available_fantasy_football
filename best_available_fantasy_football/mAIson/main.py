@@ -52,7 +52,7 @@ def main():
 
     player_stats_df = pd.DataFrame(player_stats)[["PlayerID"] + USEFUL_STATS]
 
-    rankings = pd.read_csv("rankings/bdge_rankings/superflex-2023-07-30.csv")
+    rankings = pd.read_csv("rankings/bdge_rankings/2023-08-02/2023-08-02-clean.csv")
     rankings["clean_name"] = clean_player_name_col(rankings["name"])
 
     buffed_rankings = rankings.merge(
@@ -82,8 +82,10 @@ def backup_loop():
         drafted_players = pd.DataFrame()
 
     ai_player_draft.draft_loop(
-        rankings[[x for x in rankings.columns if "Unnamed" not in x]],
-        drafted_players[[x for x in drafted_players.columns if "Unnamed" not in x]],
+        rankings[[x for x in rankings.columns if "Unnamed" not in str(x)]],
+        drafted_players[
+            [x for x in drafted_players.columns if "Unnamed" not in str(x)]
+        ],
     )
 
 

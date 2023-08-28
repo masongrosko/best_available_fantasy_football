@@ -151,7 +151,7 @@ def chat_gpt_draft_message(my_pick, prior_picks, round_picked, overall_pick):
                 "content": (
                     f"They drafted the following players in this "
                     f"order, {prior_picks.to_csv()}"
-                    if len(prior_picks > 1)
+                    if len(prior_picks) > 1
                     else "No players drafted yet, skip the trash talk."
                 ),
             },
