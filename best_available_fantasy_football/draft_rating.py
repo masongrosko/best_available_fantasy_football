@@ -1,6 +1,5 @@
 """Create a draft rating."""
 
-import datetime
 import re
 import uuid
 from pathlib import Path
@@ -13,9 +12,11 @@ from espn_api.football import League
 
 from best_available_fantasy_football.rankings_extraction import (
     BDGEDraftOrderExtractor,
+    DraftSharksADPDraftOrderExtractor,
     DraftType,
     EspnDraftOrderExtractor,
     ManualDraftOrderExtractor,
+    YahooHtmlDraftOrderExtractor,
 )
 
 GRADES = {
@@ -46,7 +47,18 @@ def presentable_headers(columns: list) -> dict:
     return {x: " ".join([y.title() for y in x.split("_")]) for x in columns}
 
 
-def husky_supreme():
+def husky_supreme_2023():
+    """Return the husky supreme rating."""
+    draft_picks = Path("rankings/draft_day/2023-08-05.html")
+    draft_table = YahooHtmlDraftOrderExtractor().extract_draft_order(draft_picks)
+    bdge_ratings = Path("rankings/bdge_rankings/2023-08-02/2023-08-02-clean.csv")
+    bdge_table = pd.read_csv(bdge_ratings, index_col=0)
+    reports_path = Path("docs/content/docs/2023/reports/husky_supreme/draft_reports")
+
+    return draft_table, bdge_table, reports_path
+
+
+def husky_supreme_2022():
     """Return the husky supreme rating."""
     draft_picks = Path("rankings/draft_day/2022-08-13.csv")
     draft_table = ManualDraftOrderExtractor().extract_draft_order(draft_picks)
@@ -54,7 +66,7 @@ def husky_supreme():
     bdge_table = BDGEDraftOrderExtractor(DraftType.SUPERFLEX).extract_draft_order(
         bdge_ratings
     )
-    reports_path = Path("docs/content/docs/reports/husky_supreme/draft_reports")
+    reports_path = Path("docs/content/docs/2022/reports/husky_supreme/draft_reports")
 
     return draft_table, bdge_table, reports_path
 
@@ -67,7 +79,7 @@ def grosko_and_co():
     bdge_table = BDGEDraftOrderExtractor(DraftType.SINGLE_QB).extract_draft_order(
         bdge_ratings
     )
-    reports_path = Path("docs/content/docs/reports/grosko_and_co/draft_reports")
+    reports_path = Path("docs/content/docs/2022/reports/grosko_and_co/draft_reports")
 
     return draft_table, bdge_table, reports_path
 
@@ -85,7 +97,7 @@ def man_vs_machine() -> Tuple[pd.DataFrame, Sequence[Path], Path]:
     ratings = list(
         Path("../espn_best_ball/espn_best_ball/draft/draft_order").glob("*csv")
     )
-    reports_path = Path("docs/content/docs/reports/man_vs_machine/draft_reports")
+    reports_path = Path("docs/content/docs/2022/reports/man_vs_machine/draft_reports")
 
     return draft_table, ratings, reports_path
 
@@ -105,13 +117,10 @@ def _clean_player_name_col(player_name_col: pd.Series) -> pd.Series:
     )
 
 
-def report_per_ranking():
+def report_per_ranking(draft_table, ratings, reports_path):
     """Write out a report per ranking provided."""
     # Prep tables
     pd.options.display.float_format = "{:,.0f}".format
-
-    # Grab data
-    draft_table, ratings, reports_path = man_vs_machine()
 
     # Clean draft_table
     draft_table["name"] = draft_table["pick"].copy()
@@ -447,7 +456,358 @@ def report_per_ranking():
             )
 
 
-def main():
+def create_comparison(draft_table, rankings_table, reports_path, adp_table=None):
+    """Create comparison of draft_table to some set ratings."""
+    # Create images folder
+    images_path = reports_path / "images"
+    for leftover_file in list(images_path.glob("*")):
+        leftover_file.unlink()
+    images_path.rmdir() if images_path.exists() else ...
+    images_path.mkdir(parents=True)
+
+    # Merge ratings
+    merged = rankings_table.merge(
+        draft_table, how="outer", left_on="Name", right_on="pick"
+    )
+    merged = merged.sort_values(by="pick_number")
+    merged["name"] = np.where(merged["name"].isna(), merged["pick"], merged["name"])
+    merged["Name"] = np.where(
+        merged["Name"].isna(), merged["original_name"], merged["Name"]
+    )
+    if adp_table is not None:
+        merged = merged.merge(
+            adp_table[["clean_name", "adp"]],
+            how="left",
+            left_on="Name",
+            right_on="clean_name",
+        )
+        merged["ADP"] = merged["adp"].copy()
+        del merged["adp"]
+
+    merged["overall_delta"] = merged["pick_number"] - merged["Overall Rank"].astype(
+        float
+    )
+    merged["adp_delta"] = merged["pick_number"] - merged["ADP"].astype(float)
+
+    merged["round_picked"] = merged["round"].copy()
+    merged["overall_rank"] = merged["Overall Rank"].copy()
+    merged["position_rank"] = merged["Positional Rank"].copy()
+
+    clean_names = {
+        "overall_rank": "Overall Rank",
+        "position_rank": "Positional Rank",
+        # "Name",
+        # "Team",
+        # "ADP",
+        "pick_number": "Pick Number",
+        # "pick",
+        "drafter": "Drafter",
+        "original_name": "Player Name",
+        "overall_delta": "Overall Delta",
+        "adp_delta": "ADP Delta",
+        "round_picked": "round",
+    }
+
+    groups = merged.groupby("drafter")
+    round_len = len(groups)
+    for drafter, details in groups:
+        report = []
+        # Header
+        report.append(f"## {drafter}")
+
+        # Overall rating
+        report.append(
+            "### Overall Rating "
+            f"{{#overall-rating-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append(f"{get_grade(details['overall_delta'].mean(), round_len)}")
+        fig_name = f"{uuid.uuid4()}.png"
+        plot_to_make = details.reset_index()["overall_delta"]
+        plot_to_make.index += 1
+        plot_to_make.plot.bar(
+            color=(details["overall_delta"] > 0).map(
+                {True: "tab:blue", False: "tab:orange"}
+            ),
+            alpha=0.75,
+            rot=0,
+        ).get_figure()  # type: ignore
+        plt.ylabel("Overall Delta")
+        plt.xlabel("Pick Number")
+        plt.tight_layout()
+        plt.savefig(images_path / fig_name)
+        plt.cla()
+        report.append(f"![rating_of_{drafter}_viz](../images/{fig_name})")
+
+        # Great picks
+        report.append(
+            "### Great picks "
+            f"{{#great-picks-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append('{{< details "Great picks" >}}')
+
+        great_picks = details.loc[details["overall_delta"] > round_len]
+        if len(great_picks) == 0:
+            report.append("No great picks found")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(great_picks)} "
+                f"{'picks' if len(great_picks) != 1 else 'pick'} "
+                f"{'were' if len(great_picks) != 1 else 'was'} "
+                f"picked more than a full round later than expected."
+            )
+            report.append(
+                great_picks[
+                    [
+                        "round_picked",
+                        "name",
+                        "overall_rank",
+                        "pick_number",
+                        "overall_delta",
+                        "ADP",
+                    ]
+                ]
+                .rename(columns=presentable_headers(list(great_picks)))
+                .to_html(index=False)
+            )
+
+        report.append("{{< /details >}}")
+
+        # Reach picks
+        report.append(
+            "### Reach picks "
+            f"{{#reach-picks-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append('{{< details "Reach picks" >}}')
+
+        reach_picks = details.loc[details["overall_delta"] < (-1 * round_len)]
+        if len(reach_picks) == 0:
+            report.append("No reach picks found")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(reach_picks)} "
+                f"{'picks' if len(reach_picks) != 1 else 'pick'} "
+                f"{'were' if len(reach_picks) != 1 else 'was'} "
+                f"picked more than a full round earlier than expected."
+            )
+            report.append(
+                reach_picks[
+                    [
+                        "round_picked",
+                        "name",
+                        "overall_rank",
+                        "pick_number",
+                        "overall_delta",
+                        "ADP",
+                    ]
+                ]
+                .rename(columns=presentable_headers(list(reach_picks)))
+                .to_html(index=False)
+            )
+
+        report.append("{{< /details >}}")
+
+        # Unrated picks
+        report.append(
+            "### Unrated picks "
+            f"{{#unrated-picks-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append('{{< details "Unrated picks" >}}')
+
+        unrated_picks = details.loc[details["overall_rank"].isna()]
+        if len(unrated_picks) == 0:
+            report.append("No unrated picks")
+        else:
+            report.append(
+                f"Of the {len(details)} players drafted by {drafter}, "
+                f"{len(unrated_picks)} "
+                f"{'picks' if len(unrated_picks) != 1 else 'pick'} "
+                f"{'were' if len(unrated_picks) != 1 else 'was'} "
+                f"not rated by Mason."
+            )
+            report.append(
+                unrated_picks[
+                    [
+                        "round_picked",
+                        "name",
+                        "pick_number",
+                        "ADP",
+                    ]
+                ]
+                .rename(columns=presentable_headers(list(unrated_picks)))
+                .to_html(index=False)
+            )
+
+        report.append("{{< /details >}}")
+
+        # Pick by pick breakdown
+        report.append(
+            "### Pick by pick breakdown "
+            f"{{#pick-by-pick-breakdown-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append('{{< details "Pick by pick breakdown" >}}')
+
+        for pick in details.iterrows():
+            pick_details = pick[1]
+
+            report.append(
+                '{{< details "'
+                f"{int(pick_details['round_picked'])}: "
+                f"{pick_details['name']}"
+                '" >}}'
+            )
+
+            columns = [
+                "name",
+                "team_name",
+                "pick_number",
+                "overall_rank",
+                "position_rank",
+                "overall_delta",
+                "ADP",
+            ]
+            columns = [x for x in columns if x in pick_details.index]
+            report.append(
+                pick_details[columns]
+                .to_frame()
+                .T.rename(columns=presentable_headers(list(pick_details.index)))
+                .to_html(index=False)
+            )
+
+            better_picks = merged.loc[
+                (
+                    merged["overall_rank"].astype(float)
+                    < (
+                        float(pick_details["overall_rank"])
+                        if pick_details["overall_rank"] == pick_details["overall_rank"]
+                        else float(pick_details["pick_number"])
+                    )
+                )
+                & (merged["pick_number"] > pick_details["pick_number"])
+            ]
+            better_picks = better_picks.sort_values("overall_rank")
+            better_position_picks = merged.loc[
+                (
+                    merged["overall_rank"].astype(float)
+                    < (
+                        float(pick_details["overall_rank"])
+                        if pick_details["overall_rank"] == pick_details["overall_rank"]
+                        else float(pick_details["pick_number"])
+                    )
+                )
+                & (merged["pick_number"] > pick_details["pick_number"])
+                & (merged["position"] == str(pick_details["position"]))
+            ]
+            better_position_picks = better_position_picks.sort_values("overall_rank")
+
+            if len(better_picks) > 0:
+                report.append(
+                    '{{< details "Picks on the board '
+                    'that would have been better" >}}'
+                )
+                report.append(
+                    better_picks[["name", "overall_rank", "pick_number", "ADP"]]
+                    .rename(columns=presentable_headers(list(better_picks)))
+                    .to_html(index=False)
+                )
+                report.append("{{< /details >}}")
+            else:
+                report.append("This was the best pick available!")
+
+            if len(better_position_picks) > 0:
+                report.append(
+                    '{{< details "Picks on the board that '
+                    'were better in that position!" >}}'
+                )
+                report.append(
+                    better_position_picks[
+                        [
+                            "name",
+                            "position_rank",
+                            "overall_rank",
+                            "pick_number",
+                            "ADP",
+                        ]
+                    ]
+                    .rename(columns=presentable_headers(list(better_position_picks)))
+                    .to_html(index=False)
+                )
+                report.append("{{< /details >}}")
+
+            report.append("{{< /details >}}")
+
+        report.append("{{< /details >}}")
+
+        # Write out report
+        report_location = reports_path / f"{drafter}_draft_report.md"
+        with open(report_location, "w") as f:
+            f.write(
+                re.sub(
+                    r"\n\s+",
+                    "\n",
+                    f"""---
+                    title: "{drafter} Draft Report"
+                    description: "2023 Draft Report for {drafter}"
+                    weight: 50
+                    ---
+
+                    """,
+                )
+            )
+        with open(report_location, "a") as f:
+            f.write(
+                "\n\n".join(report)
+                .replace('border="1"', "")
+                .replace('style="text-align: right;"', 'style="text-align: left;"')
+            )
+
+
+def main_2023():
+    """Sample script."""
+    draft_table, bdge_table, reports_path = husky_supreme_2023()
+    adp_table = DraftSharksADPDraftOrderExtractor().extract_draft_order(
+        "rankings/draft_sharks_adp/2023-08-19-superflex.html"
+    )
+
+    draft_table["drafter"] = draft_table["drafter_team_name"].map(
+        {
+            "Till The Whe...": "Kevin",
+            "The Hungry H...": "Devin",
+            "mAIson": "Mason",
+            "SoCalZen": "Toby",
+            "Dijon Moeste...": "Penner",
+            "GOBBLE DEEZ": "Nick",
+            "Prestige Wor...": "Shouse",
+            "Bijan Mustar...": "Sam N",
+            "Fields did 9/11": "Drew",
+            "smell my Kupp": "Megan",
+        }
+    )
+
+    adp_table["clean_name"] = _clean_player_name_col(adp_table["player_name"])
+    bdge_table["Name"] = _clean_player_name_col(bdge_table["name"])
+    bdge_table["Overall Rank"] = bdge_table.index
+    bdge_table["Positional Rank"] = bdge_table["position"] + (
+        bdge_table.groupby("position").cumcount() + 1
+    ).astype(str)
+    draft_table["original_name"] = draft_table["player_name"].copy()
+    draft_table["pick"] = _clean_player_name_col(draft_table["player_name"])
+    draft_table["Team"] = draft_table["player_team"]
+
+    draft_table["pick_number"] = (
+        (draft_table["round"].astype(int) - 1) * 10
+    ) + draft_table["pick_number"]
+
+    create_comparison(
+        draft_table=draft_table,
+        rankings_table=bdge_table,
+        reports_path=reports_path,
+        adp_table=adp_table,
+    )
+
+
+def main_2022():
     """Sample script."""
     # draft_table, bdge_table, reports_path = husky_supreme()
     draft_table, bdge_table, reports_path = grosko_and_co()
@@ -456,247 +816,8 @@ def main():
     draft_table["original_name"] = draft_table["pick"].copy()
     draft_table["pick"] = _clean_player_name_col(draft_table["pick"])
 
-    merged = bdge_table.merge(draft_table, how="outer", left_on="Name", right_on="pick")
-    merged = merged.sort_values(by="pick_number")
-
-    merged["bdge_diff"] = merged["pick_number"] - merged["Overall Rank"].astype(float)
-    merged["adp_diff"] = merged["pick_number"] - merged["ADP"].astype(float)
-
-    clean_names = {
-        # "Overall Rank",
-        # "Positional Rank",
-        # "Name",
-        # "Team",
-        # "ADP",
-        # "ADP Delta",
-        "pick_number": "Pick Number",
-        # "pick",
-        "drafter": "Drafter",
-        "original_name": "Player Name",
-        "bdge_diff": "Overall Delta",
-        "adp_diff": "ADP Delta",
-    }
-
-    groups = merged.groupby("drafter")
-    round_len = len(groups)
-    for drafter, details in groups:
-        report = []
-
-        report.append("## Overall Rating")
-        report.append("### Mason")
-        report.append(f"{get_grade(details['bdge_diff'].mean(), round_len)}")
-        fig_name = f"{uuid.uuid4()}.png"
-        details.reset_index()["bdge_diff"].plot.bar(
-            color=(details["bdge_diff"] > 0).map(
-                {True: "tab:blue", False: "tab:orange"}
-            )
-        ).get_figure().savefig(  # type: ignore
-            reports_path / fig_name
-        )
-        plt.cla()
-        report.append(f"![mason_rating_viz](../{fig_name})")
-
-        report.append("### ADP")
-        report.append(f"{get_grade(details['adp_diff'].mean(), round_len)}")
-        fig_name = f"{uuid.uuid4()}.png"
-        details.reset_index()["adp_diff"].plot.bar(
-            color=(details["adp_diff"] > 0).map({True: "tab:blue", False: "tab:orange"})
-        ).get_figure().savefig(  # type: ignore
-            reports_path / fig_name
-        )
-        plt.cla()
-        report.append(f"![adp_rating_viz](../{fig_name})")
-
-        report.append("## Great picks - Mason")
-        great_picks = details.loc[details["bdge_diff"] > round_len]
-        if len(great_picks) == 0:
-            report.append("No great picks found")
-        else:
-            report.append(
-                f"Of the {len(details)} players drafted by {drafter}, "
-                f"{len(great_picks)} {'picks' if len(great_picks) != 1 else 'pick'} "
-                f"{great_picks['original_name'].to_list()} "
-                f"{'were' if len(great_picks) != 1 else 'was'} "
-                f"picked more than a full round later than expected."
-            )
-            report.append(
-                great_picks[["original_name", "Overall Rank", "pick_number"]]
-                .rename(columns=clean_names)
-                .reset_index(drop=True)
-                .to_html()
-            )
-
-        report.append("## Great picks - ADP")
-        great_picks = details.loc[details["adp_diff"] > round_len]
-        if len(great_picks) == 0:
-            report.append("No great picks found")
-        else:
-            report.append(
-                f"Of the {len(details)} players drafted by {drafter}, "
-                f"{len(great_picks)} {'picks' if len(great_picks) != 1 else 'pick'} "
-                f"{great_picks['original_name'].to_list()} "
-                f"{'were' if len(great_picks) != 1 else 'was'} "
-                f"picked more than a full round later than expected."
-            )
-            report.append(
-                great_picks[["original_name", "ADP", "pick_number"]]
-                .rename(columns=clean_names)
-                .reset_index(drop=True)
-                .to_html()
-            )
-
-        report.append("## Reach picks - Mason")
-        reach_picks = details.loc[details["bdge_diff"] < (-1 * round_len)]
-        if len(reach_picks) == 0:
-            report.append("No reach picks found")
-        else:
-            report.append(
-                f"Of the {len(details)} players drafted by {drafter}, "
-                f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
-                f"{reach_picks['original_name'].to_list()} "
-                f"{'were' if len(reach_picks) != 1 else 'was'} "
-                f"picked more than a full round earlier than expected."
-            )
-            report.append(
-                reach_picks[["original_name", "Overall Rank", "pick_number"]]
-                .rename(columns=clean_names)
-                .reset_index(drop=True)
-                .to_html()
-            )
-
-        report.append("## Reach picks - ADP")
-        reach_picks = details.loc[details["adp_diff"] < (-1 * round_len)]
-        if len(reach_picks) == 0:
-            report.append("No reach picks found")
-        else:
-            report.append(
-                f"Of the {len(details)} players drafted by {drafter}, "
-                f"{len(reach_picks)} {'picks' if len(reach_picks) != 1 else 'pick'} "
-                f"{reach_picks['original_name'].to_list()} "
-                f"{'were' if len(reach_picks) != 1 else 'was'} "
-                f"picked more than a full round earlier than expected."
-            )
-            report.append(
-                reach_picks[["original_name", "ADP", "pick_number"]]
-                .rename(columns=clean_names)
-                .reset_index(drop=True)
-                .to_html()
-            )
-
-        report.append("## Deep cut (BAD) picks")
-        deep_cut_picks = details.loc[details["Name"].isna(), "original_name"].to_list()
-        if len(reach_picks) == 0:
-            report.append("No deep cut picks found")
-        else:
-            report.append(
-                f"Of the {len(details)} players drafted by {drafter}, "
-                f"{len(deep_cut_picks)} "
-                f"{'picks' if len(deep_cut_picks) != 1 else 'pick'} "
-                f"{deep_cut_picks} {'were' if len(deep_cut_picks) > 1 else 'was'} "
-                f"not even found in the provided rankings as a viable candidate!"
-            )
-
-        report.append("## Pick by pick breakdown")
-
-        for pick in details.iterrows():
-            pick_details = pick[1]
-
-            report.append(
-                f"### {pick_details['original_name']} - {pick_details['pick_number']}"
-            )
-
-            report.append(
-                pick_details[
-                    [
-                        "original_name",
-                        "Team",
-                        "pick_number",
-                        "Overall Rank",
-                        "ADP",
-                        "Positional Rank",
-                        "bdge_diff",
-                        "adp_diff",
-                    ]
-                ]
-                .rename(clean_names)
-                .to_frame()
-                .T.to_html()
-            )
-
-            better_picks = merged.loc[
-                (
-                    merged["Overall Rank"].astype(float)
-                    < (
-                        float(pick_details["Overall Rank"])
-                        if pick_details["Overall Rank"] == pick_details["Overall Rank"]
-                        else float(pick_details["pick_number"])
-                    )
-                )
-                & (merged["pick_number"] > pick_details["pick_number"])
-            ]
-            better_position_picks = merged.loc[
-                (
-                    merged["Overall Rank"].astype(float)
-                    < (
-                        float(pick_details["Overall Rank"])
-                        if pick_details["Overall Rank"] == pick_details["Overall Rank"]
-                        else float(pick_details["pick_number"])
-                    )
-                )
-                & (merged["pick_number"] > pick_details["pick_number"])
-                & (
-                    merged["Positional Rank"].astype(str).str[:2]
-                    == str(pick_details["Positional Rank"])[:2]
-                )
-            ]
-
-            if len(better_picks) > 0:
-                report.append("Picks on the board that would have been better:")
-                report.append(
-                    better_picks[["original_name", "Overall Rank", "pick_number"]]
-                    .rename(columns=clean_names)
-                    .reset_index(drop=True)
-                    .to_html()
-                )
-            else:
-                report.append("This was the best pick available!")
-
-            if len(better_position_picks) > 0:
-                report.append("Picks on the board that were better in that position!")
-                report.append(
-                    better_position_picks[
-                        [
-                            "original_name",
-                            "Positional Rank",
-                            "Overall Rank",
-                            "pick_number",
-                        ]
-                    ]
-                    .rename(columns=clean_names)
-                    .reset_index(drop=True)
-                    .to_html()
-                )
-
-        report_location = reports_path / f"{drafter}_draft_report.md"
-        if not report_location.exists():
-            with open(report_location, "w") as f:
-                f.write(
-                    re.sub(
-                        r"\n\s+",
-                        "\n",
-                        f"""
-                        ---
-                        title: "{drafter} Draft Report"
-                        description: "2022 Draft Report for {drafter}"
-                        weight: 50
-                        ---
-                        """,
-                    )
-                )
-        with open(report_location, "a") as f:
-            f.write(f"#### Draft review as of {datetime.datetime.now().date()}\n")
-            f.write("\n\n".join(report).replace('border="1"', ""))
-
-
-if __name__ == "__main__":
-    main()
+    create_comparison(
+        draft_table=draft_table,
+        rankings_table=bdge_table,
+        reports_path=reports_path,
+    )
