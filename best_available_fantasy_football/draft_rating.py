@@ -84,6 +84,17 @@ def grosko_and_co():
     return draft_table, bdge_table, reports_path
 
 
+def grosko_and_co_2023():
+    """Return the grosko-and-co rating."""
+    draft_picks = Path("rankings/draft_day/grosko_and_co_2023.csv")
+    draft_table = EspnDraftOrderExtractor().extract_draft_order(draft_picks)
+    bdge_ratings = Path("rankings/bdge_rankings/2023-08-27/2023-08-27-clean.csv")
+    bdge_table = pd.read_csv(bdge_ratings, index_col=0)
+    reports_path = Path("docs/content/docs/2023/reports/grosko_and_co/draft_reports")
+
+    return draft_table, bdge_table, reports_path
+
+
 def man_vs_machine() -> Tuple[pd.DataFrame, Sequence[Path], Path]:
     """Return the man-vs-machine rating."""
     draft_picks = League(league_id=1030704919, year=2022).draft
@@ -456,6 +467,42 @@ def report_per_ranking(draft_table, ratings, reports_path):
             )
 
 
+def summary_chart(merged, images_path, report):
+    drafter_scores = (
+        merged.groupby("drafter")
+        .agg(
+            Rating=(
+                "overall_delta",
+                lambda x: get_grade(x.mean(), merged["drafter"].nunique()).split("\n")[
+                    0
+                ],
+            ),
+            Mean=("overall_delta", "mean"),
+            Median=("overall_delta", "median"),
+            Min=("overall_delta", "min"),
+            Max=("overall_delta", "max"),
+            Missing=("overall_delta", lambda x: x.isna().sum()),
+        )
+        .sort_values("Mean", ascending=False)
+    )
+    drafter_scores.index = drafter_scores.index.rename("Drafter")
+    fig_name = f"{uuid.uuid4()}.png"
+    plot_to_make = drafter_scores["Mean"]
+    plot_to_make.plot.bar(
+        color=(drafter_scores["Mean"] > 0).map({True: "tab:blue", False: "tab:orange"}),
+        alpha=0.75,
+        rot=90,
+    ).get_figure()  # type: ignore
+    plt.ylabel("Mean Delta")
+    plt.tight_layout()
+    plt.savefig(images_path / fig_name)
+    plt.cla()
+    report.append(f"![summary_drafter_scores](draft_reports/images/{fig_name})")
+    report.append(drafter_scores.reset_index().to_html(index=False))
+
+    return report
+
+
 def create_comparison(draft_table, rankings_table, reports_path, adp_table=None):
     """Create comparison of draft_table to some set ratings."""
     # Create images folder
@@ -470,10 +517,10 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
         draft_table, how="outer", left_on="Name", right_on="pick"
     )
     merged = merged.sort_values(by="pick_number")
-    merged["name"] = np.where(merged["name"].isna(), merged["pick"], merged["name"])
-    merged["Name"] = np.where(
-        merged["Name"].isna(), merged["original_name"], merged["Name"]
+    merged["name"] = np.where(
+        merged["name"].isna(), merged["original_name"], merged["name"]
     )
+    merged["Name"] = np.where(merged["Name"].isna(), merged["pick"], merged["Name"])
     if adp_table is not None:
         merged = merged.merge(
             adp_table[["clean_name", "adp"]],
@@ -507,6 +554,20 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
         "adp_delta": "ADP Delta",
         "round_picked": "round",
     }
+
+    # Summary report
+    with open(reports_path / ".." / "_index.md") as f:
+        report = f.read()
+
+    report = [report.split("\n---\n")[0] + "\n---"]
+    report = summary_chart(merged, images_path, report)
+
+    with open(reports_path / ".." / "_index.md", "w") as f:
+        f.write(
+            "\n\n".join(report)
+            .replace('border="1"', "")
+            .replace('style="text-align: right;"', 'style="text-align: left;"')
+        )
 
     groups = merged.groupby("drafter")
     round_len = len(groups)
@@ -760,7 +821,56 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                 "\n\n".join(report)
                 .replace('border="1"', "")
                 .replace('style="text-align: right;"', 'style="text-align: left;"')
+                .replace(".0<", "<")
             )
+
+
+def grosko_and_co_main_2023():
+    """Sample script."""
+    draft_table, bdge_table, reports_path = grosko_and_co_2023()
+    adp_table = DraftSharksADPDraftOrderExtractor().extract_draft_order(
+        "rankings/draft_sharks_adp/2023-08-27-1qb.html"
+    )
+
+    draft_table["drafter"] = draft_table["drafter"].map(  # type: ignore
+        {
+            "G-Unit": "Gordon",
+            "Sherlock_Mahomes": "Zach",
+            "Fresh_Start_-_Lam_3:23": "Mike",
+            "H-TOWN": "Hannah",
+            "ShakeitOffense_(Mack'sVersion)": "Mackenzie",
+            "The_Gridiron_Chefs": "Austin",
+            "Here_Botz": "Ryan",
+            "Mason_Grosko": "Mason",
+            "Team_Youngerbuehler": "Dallas",
+            "Team_Rowe": "TJ",
+            "Finding_Deebo": "Garrett",
+            "Arby's_Roast_Beef": "Riley",
+            "Joe_Buck_Yourself": "Cody",
+            "We_Were_Winners_Once": "Ethan",
+        }
+    )
+
+    adp_table["clean_name"] = _clean_player_name_col(adp_table["player_name"])
+    bdge_table["Name"] = _clean_player_name_col(bdge_table["name"])
+    bdge_table["Overall Rank"] = bdge_table.index
+    bdge_table["Positional Rank"] = bdge_table["position"] + (
+        bdge_table.groupby("position").cumcount() + 1
+    ).astype(str)
+    draft_table["original_name"] = draft_table["pick"].copy()
+    draft_table["pick"] = _clean_player_name_col(draft_table["pick"])
+    draft_table["Team"] = draft_table["player_team"]
+
+    draft_table["round"] = (
+        (draft_table["pick_number"].astype(int) - 1) // draft_table["drafter"].nunique()
+    ) + 1
+
+    create_comparison(
+        draft_table=draft_table,
+        rankings_table=bdge_table,
+        reports_path=reports_path,
+        adp_table=adp_table,
+    )
 
 
 def main_2023():
@@ -770,7 +880,7 @@ def main_2023():
         "rankings/draft_sharks_adp/2023-08-19-superflex.html"
     )
 
-    draft_table["drafter"] = draft_table["drafter_team_name"].map(
+    draft_table["drafter"] = draft_table["drafter_team_name"].map(  # type: ignore
         {
             "Till The Whe...": "Kevin",
             "The Hungry H...": "Devin",

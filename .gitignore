@@ -139,6 +139,7 @@ dmypy.json
 
 # rankings
 /rankings/bdge_rankings/**
+rankings/draft_sharks_adp/**
 backup.csv
 drafted_backup.csv
 elevenlabs_secret.json
