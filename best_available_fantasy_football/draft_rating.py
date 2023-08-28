@@ -497,6 +497,10 @@ def summary_chart(merged, images_path, report):
     plt.tight_layout()
     plt.savefig(images_path / fig_name)
     plt.cla()
+    drafter_scores = drafter_scores.round(2)
+    drafter_scores["Min"] = drafter_scores["Min"].astype(int)
+    drafter_scores["Max"] = drafter_scores["Max"].astype(int)
+    drafter_scores["Missing"] = drafter_scores["Missing"].astype(int)
     report.append(f"![summary_drafter_scores](draft_reports/images/{fig_name})")
     report.append(drafter_scores.reset_index().to_html(index=False))
 
