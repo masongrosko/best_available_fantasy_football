@@ -116,15 +116,25 @@ class EspnDraftOrderExtractor(DraftOrderExtractor):
         base_file = pd.read_csv(file_path)
         base_file["team"] = base_file["team"].str.replace(r"\s+", "_", regex=True)
 
-        out_data = {"pick_number": [], "pick": [], "drafter": []}
+        out_data = {
+            "pick_number": [],
+            "pick": [],
+            "player_team": [],
+            "player_position": [],
+            "drafter": [],
+        }
         for row in base_file.iterrows():
             pick_number = int(row[0]) + 1
             drafts = row[1]
             pick = " ".join(drafts["player"].split(",")[0].split(" ")[:-1])
+            team = drafts["player"].split(",")[-2].rsplit(" ", 1)[-1]
+            position = drafts["player"].split(",")[-1].strip()
 
             out_data["drafter"].append(drafts["team"])
             out_data["pick"].append(pick)
             out_data["pick_number"].append(pick_number)
+            out_data["player_team"].append(team)
+            out_data["player_position"].append(position)
 
         return pd.DataFrame(out_data)
 
