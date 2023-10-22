@@ -2,7 +2,7 @@ baseUrl = "https://masongrosko.github.io/best_available_fantasy_football/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 publishDir = "../public"
-title = "Fantasy Football - 2022"
+title = "Fantasy Football"
 
 enableGitInfo = true
 

@@ -1,0 +1,22 @@
+
+{{ $src := .Get "src" }}
+{{ $data := getCSV "," $src }}
+
+<table>
+  <thead>
+    <tr>
+      {{ range $header := index $data 0 }}
+        <th>{{ $header }}</th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range after 1 $data }}
+      <tr>
+        {{ range $cell := . }}
+          <td>{{ $cell }}</td>
+        {{ end }}
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
