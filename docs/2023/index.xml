@@ -1,1 +1,357 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fantasy Football - 2022 – 2023</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/</link><description>Recent content in 2023 on Fantasy Football - 2022</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://masongrosko.github.io/best_available_fantasy_football/docs/2023/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Reports</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/reports/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/reports/</guid><description/></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fantasy Football – 2023</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/</link><description>Recent content in 2023 on Fantasy Football</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://masongrosko.github.io/best_available_fantasy_football/docs/2023/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Rankings</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/rankings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/rankings/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Rank&lt;/th>
+&lt;th>RB&lt;/th>
+&lt;th>WR&lt;/th>
+&lt;th>TE&lt;/th>
+&lt;th>QB&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>Christian McCaffrey&lt;/td>
+&lt;td>Tyreek Hill&lt;/td>
+&lt;td>Travis Kelce&lt;/td>
+&lt;td>Josh Allen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>Travis Ettiene&lt;/td>
+&lt;td>Stefon Diggs&lt;/td>
+&lt;td>Mark Andrews&lt;/td>
+&lt;td>Jalen Hurts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>Austin Ekeler&lt;/td>
+&lt;td>Justin Jefferson&lt;/td>
+&lt;td>Hockenson&lt;/td>
+&lt;td>Patrick Mahomes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>4&lt;/td>
+&lt;td>Bijan Robinson&lt;/td>
+&lt;td>AJ Brown&lt;/td>
+&lt;td>Sam LaPorta&lt;/td>
+&lt;td>Justin Herbert&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5&lt;/td>
+&lt;td>Ken Walker&lt;/td>
+&lt;td>Jamarr Chase&lt;/td>
+&lt;td>George Kittle&lt;/td>
+&lt;td>Lamar Jackson&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>6&lt;/td>
+&lt;td>D&amp;#39;Andre Swift&lt;/td>
+&lt;td>Cooper Kupp&lt;/td>
+&lt;td>Dallas Goedert&lt;/td>
+&lt;td>Tua T&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>7&lt;/td>
+&lt;td>Alvin Kamara&lt;/td>
+&lt;td>Keenan Allen&lt;/td>
+&lt;td>Cole Kmet&lt;/td>
+&lt;td>Brock Purdy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>8&lt;/td>
+&lt;td>Saquon Barkley&lt;/td>
+&lt;td>Davante Adams&lt;/td>
+&lt;td>Evan Engram&lt;/td>
+&lt;td>Joe Burrow&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>9&lt;/td>
+&lt;td>Raheem Mostert&lt;/td>
+&lt;td>Brandon Aiyuk&lt;/td>
+&lt;td>Dalton Schultz&lt;/td>
+&lt;td>Trevor Lawrence&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>10&lt;/td>
+&lt;td>Derrick Henry&lt;/td>
+&lt;td>Amon-Ra St Brown&lt;/td>
+&lt;td>Darren Waller&lt;/td>
+&lt;td>Justin Fields&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11&lt;/td>
+&lt;td>Josh Jacobs&lt;/td>
+&lt;td>CeeDee Lamb&lt;/td>
+&lt;td>Kyle Pitts&lt;/td>
+&lt;td>Anthony Richardson&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>12&lt;/td>
+&lt;td>Breece Hall&lt;/td>
+&lt;td>Chris Olave&lt;/td>
+&lt;td>Jake Ferguson&lt;/td>
+&lt;td>Jared Goff&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>13&lt;/td>
+&lt;td>David Montgomery&lt;/td>
+&lt;td>Jaylen Waddle&lt;/td>
+&lt;td>Logan Thomas&lt;/td>
+&lt;td>Kirk Cousins&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>14&lt;/td>
+&lt;td>Aaron Jones&lt;/td>
+&lt;td>DK Metcalf&lt;/td>
+&lt;td>Luke Musgrave&lt;/td>
+&lt;td>Geno Smith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>15&lt;/td>
+&lt;td>Tony Pollard&lt;/td>
+&lt;td>Puka Nacua&lt;/td>
+&lt;td>Dalton Kincaid&lt;/td>
+&lt;td>CJ Stroud&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>16&lt;/td>
+&lt;td>Joe Mixon&lt;/td>
+&lt;td>DaVonta Smith&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Deshaun Watson&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>17&lt;/td>
+&lt;td>Jonathon Taylor&lt;/td>
+&lt;td>DJ Moore&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Matthew Stafford&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>18&lt;/td>
+&lt;td>Zach Moss&lt;/td>
+&lt;td>Mike Evans&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>19&lt;/td>
+&lt;td>Isiah Pacheco&lt;/td>
+&lt;td>Christian Kirk&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>20&lt;/td>
+&lt;td>Brian Robinson&lt;/td>
+&lt;td>Nico Collins&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>21&lt;/td>
+&lt;td>Kyren Williams&lt;/td>
+&lt;td>Adam Thielen&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>22&lt;/td>
+&lt;td>Devon Achane&lt;/td>
+&lt;td>Jakobi Meyers&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>23&lt;/td>
+&lt;td>James Cook&lt;/td>
+&lt;td>Amari Cooper&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>24&lt;/td>
+&lt;td>Jerome Ford&lt;/td>
+&lt;td>Zay Flowers&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>25&lt;/td>
+&lt;td>Jahmyr Gibbs&lt;/td>
+&lt;td>Christian Watson&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>26&lt;/td>
+&lt;td>Alexander Mattison&lt;/td>
+&lt;td>Deebo Samuel&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>27&lt;/td>
+&lt;td>Rhanondre Stevenson&lt;/td>
+&lt;td>Garrett Wilson&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>28&lt;/td>
+&lt;td>Rachaad White&lt;/td>
+&lt;td>Terry McLaurin&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>29&lt;/td>
+&lt;td>Dameon Pierce&lt;/td>
+&lt;td>Chris Godwin&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>30&lt;/td>
+&lt;td>James Conner&lt;/td>
+&lt;td>Marquise Brown&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>31&lt;/td>
+&lt;td>Javonte Williams&lt;/td>
+&lt;td>Calvin Ridley&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>32&lt;/td>
+&lt;td>Najee Harris&lt;/td>
+&lt;td>Diontae Johnson&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>33&lt;/td>
+&lt;td>Jaylen Warren&lt;/td>
+&lt;td>Tyler Lockett&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>34&lt;/td>
+&lt;td>Rochon Johnson&lt;/td>
+&lt;td>George Pickens&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>35&lt;/td>
+&lt;td>Miles Sanders&lt;/td>
+&lt;td>Jordan Addison&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>36&lt;/td>
+&lt;td>Tyler Allgeier&lt;/td>
+&lt;td>DeAndre Hopkins&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>37&lt;/td>
+&lt;td>Chuba Hubbard&lt;/td>
+&lt;td>Tee Higgins&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>38&lt;/td>
+&lt;td>Kareem Hunt&lt;/td>
+&lt;td>Gabe Davis&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>39&lt;/td>
+&lt;td>Aj Dillon&lt;/td>
+&lt;td>Drake London&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>40&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Michael Thomas&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>41&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Jerry Jeudy&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>42&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Joshua Palmer&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>43&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Tank Dell&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>44&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Rashee Rice&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>45&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Tutu Atwell&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>46&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>JSN&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>47&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>KJ Osborn&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>48&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Josh Reynolds&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>49&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Curtis Samuel&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Reports</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/reports/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://masongrosko.github.io/best_available_fantasy_football/docs/2023/reports/</guid><description/></item></channel></rss>
