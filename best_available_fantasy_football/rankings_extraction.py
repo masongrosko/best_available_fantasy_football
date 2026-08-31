@@ -1,5 +1,6 @@
 """Pull rankings into a dataframe."""
 
+import json
 from abc import ABC, abstractmethod
 from enum import Enum
 from pathlib import Path
@@ -139,6 +140,63 @@ class EspnDraftOrderExtractor(DraftOrderExtractor):
         return pd.DataFrame(out_data)
 
 
+class SleeperDraftOrderExtractor(DraftOrderExtractor):
+    """Extract a common draft table from a Sleeper draft-picks snapshot."""
+
+    def __init__(self, users_file: PathLike, manager_names: dict[str, str] | None = None):
+        self.users_file = Path(users_file)
+        self.manager_names = manager_names or {}
+
+    @staticmethod
+    def _load_json(path: Path) -> list[dict]:
+        try:
+            text = path.read_text(encoding="utf-8-sig")
+        except UnicodeDecodeError:
+            text = path.read_text(encoding="windows-1252")
+        data = json.loads(text)
+        return data.get("value", data) if isinstance(data, dict) else data
+
+    @staticmethod
+    def _ascii(value: str) -> str:
+        return value.encode("ascii", "ignore").decode()
+
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        """Return Sleeper picks using the same schema as the other handlers."""
+        users = {
+            str(user["user_id"]): user
+            for user in self._load_json(self.users_file)
+        }
+        rows = []
+        for pick in self._load_json(Path(file_path)):
+            user_id = str(pick["picked_by"])
+            user = users.get(user_id, {})
+            user_metadata = user.get("metadata") or {}
+            metadata = pick.get("metadata") or {}
+            player_name = " ".join(
+                part for part in (metadata.get("first_name"), metadata.get("last_name")) if part
+            )
+            sleeper_team = self._ascii(
+                user_metadata.get("team_name")
+                or user.get("display_name")
+                or user_id
+            )
+            rows.append(
+                {
+                    "pick_number": int(pick["pick_no"]),
+                    "round": int(pick["round"]),
+                    "pick": player_name,
+                    "original_name": player_name,
+                    "drafter": self.manager_names.get(
+                        user_id, self._ascii(user.get("display_name") or sleeper_team)
+                    ),
+                    "sleeper_team_name": sleeper_team,
+                    "player_team": metadata.get("team", ""),
+                    "player_position": metadata.get("position", ""),
+                }
+            )
+        return pd.DataFrame(rows).sort_values("pick_number").reset_index(drop=True)
+
+
 class YahooHtmlDraftOrderExtractor(DraftOrderExtractor):
     """Extractor for draft order files from yahoo."""
 
@@ -272,3 +330,40 @@ class DraftSharksADPDraftOrderExtractor(DraftOrderExtractor):
             )
 
         return data
+
+
+class DraftSharksEmbeddedADPExtractor(DraftOrderExtractor):
+    """Extract the selected Sleeper ADP set embedded in a current ADP page."""
+
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        page = Path(file_path).read_text(encoding="utf-8-sig")
+        marker = "var vueAppData = "
+        if marker not in page:
+            raise ValueError(f"DraftSharks data was not found in {file_path}")
+        data, _ = json.JSONDecoder().raw_decode(page.split(marker, 1)[1])
+        selected = data["selected"]
+        descriptor = next(
+            item
+            for item in data["availability"]
+            if item["type"] == selected["type"]
+            and int(item["superflex"]) == int(selected["superflex"])
+            and item["scoring"] == selected["scoring"]
+            and item["source"] == "sleeper"
+            and int(item["size"]) == int(selected["size"])
+        )
+        players = data["seed"]["players"]
+        rows = []
+        for adp_row in data["seed"]["adpSets"][descriptor["key"]]:
+            player = players[str(adp_row["id"])]
+            rows.append(
+                {
+                    "player_name": f'{player["fn"]} {player["ln"]}',
+                    "player_position": player["fp"],
+                    "adp": float(adp_row["pick"]),
+                }
+            )
+        return pd.DataFrame(rows)
+
+class DraftSharksStraightRead(DraftOrderExtractor):
+    def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
+        return pd.read_csv(file_path)

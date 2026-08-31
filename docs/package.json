@@ -1,0 +1,13 @@
+{
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "name": "src",
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
+}

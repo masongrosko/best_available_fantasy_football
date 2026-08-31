@@ -1,0 +1,169 @@
+pick_number,round,drafter,sleeper_team_name,original_name,player_position,player_team
+1,1,Ethan,Qbs doin the Cam Cam,Jahmyr Gibbs,RB,DET
+2,1,Cody,The Bijantine Empire,Bijan Robinson,RB,ATL
+3,1,Riley,rileybotz,Christian McCaffrey,RB,SF
+4,1,Ryan,RBotz,Puka Nacua,WR,LAR
+5,1,Zach,Mr. Maker Baefield,Ja'Marr Chase,WR,CIN
+6,1,Garrett,YouUnderestimateMyBowers,James Cook,RB,BUF
+7,1,Austin,Love Thy Nabers,Jaxon Smith-Njigba,WR,SEA
+8,1,Mackenzie,KamaraIsAGuyOnTheChiefs,Jonathan Taylor,RB,IND
+9,1,TJ,Ladd McBonkers,Amon-Ra St. Brown,WR,DET
+10,1,Hannah,Lylas Lucky Lineup,Saquon Barkley,RB,PHI
+11,1,Mason,Always be Tuten,Kenneth Walker,RB,KC
+12,1,Mike,Harvest is Jeanty,Chase Brown,RB,CIN
+13,2,Mike,Harvest is Jeanty,De'Von Achane,RB,MIA
+14,2,Mason,Always be Tuten,CeeDee Lamb,WR,DAL
+15,2,Hannah,Lylas Lucky Lineup,Justin Jefferson,WR,MIN
+16,2,TJ,Ladd McBonkers,Ashton Jeanty,RB,LV
+17,2,Mackenzie,KamaraIsAGuyOnTheChiefs,Derrick Henry,RB,BAL
+18,2,Austin,Love Thy Nabers,Omarion Hampton,RB,LAC
+19,2,Garrett,YouUnderestimateMyBowers,A.J. Brown,WR,NE
+20,2,Zach,Mr. Maker Baefield,Brock Bowers,TE,LV
+21,2,Ryan,RBotz,Rashee Rice,WR,KC
+22,2,Riley,rileybotz,Nico Collins,WR,HOU
+23,2,Cody,The Bijantine Empire,George Pickens,WR,DAL
+24,2,Ethan,Qbs doin the Cam Cam,Josh Allen,QB,BUF
+25,3,Ethan,Qbs doin the Cam Cam,Drake London,WR,ATL
+26,3,Cody,The Bijantine Empire,Kyren Williams,RB,LAR
+27,3,Riley,rileybotz,Jeremiyah Love,RB,ARI
+28,3,Ryan,RBotz,Cam Skattebo,RB,NYG
+29,3,Zach,Mr. Maker Baefield,Javonte Williams,RB,DAL
+30,3,Garrett,YouUnderestimateMyBowers,Trey McBride,TE,ARI
+31,3,Austin,Love Thy Nabers,DeVonta Smith,WR,PHI
+32,3,Mackenzie,KamaraIsAGuyOnTheChiefs,Chris Olave,WR,NO
+33,3,TJ,Ladd McBonkers,Breece Hall,RB,NYJ
+34,3,Hannah,Lylas Lucky Lineup,Malik Nabers,WR,NYG
+35,3,Mason,Always be Tuten,Travis Etienne,RB,NO
+36,3,Mike,Harvest is Jeanty,Zay Flowers,WR,BAL
+37,4,Mike,Harvest is Jeanty,Garrett Wilson,WR,NYJ
+38,4,Mason,Always be Tuten,Tee Higgins,WR,CIN
+39,4,Hannah,Lylas Lucky Lineup,David Montgomery,RB,HOU
+40,4,TJ,Ladd McBonkers,Ladd McConkey,WR,LAC
+41,4,Mackenzie,KamaraIsAGuyOnTheChiefs,Lamar Jackson,QB,BAL
+42,4,Austin,Love Thy Nabers,D'Andre Swift,RB,CHI
+43,4,Garrett,YouUnderestimateMyBowers,Bucky Irving,RB,TB
+44,4,Zach,Mr. Maker Baefield,Los Angeles Rams,DEF,LAR
+45,4,Ryan,RBotz,Jaylen Warren,RB,PIT
+46,4,Riley,rileybotz,Tetairoa McMillan,WR,CAR
+47,4,Cody,The Bijantine Empire,Colston Loveland,TE,CHI
+48,4,Ethan,Qbs doin the Cam Cam,Josh Jacobs,RB,GB
+49,5,Ethan,Qbs doin the Cam Cam,Emeka Egbuka,WR,TB
+50,5,Cody,The Bijantine Empire,Terry McLaurin,WR,WAS
+51,5,Riley,rileybotz,Quinshon Judkins,RB,CLE
+52,5,Ryan,RBotz,Travis Kelce,TE,KC
+53,5,Zach,Mr. Maker Baefield,TreVeyon Henderson,RB,NE
+54,5,Garrett,YouUnderestimateMyBowers,Jaylen Waddle,WR,DEN
+55,5,Austin,Love Thy Nabers,Tucker Kraft,TE,GB
+56,5,Mackenzie,KamaraIsAGuyOnTheChiefs,Davante Adams,WR,LAR
+57,5,TJ,Ladd McBonkers,DJ Moore,WR,BUF
+58,5,Hannah,Lylas Lucky Lineup,Tyler Warren,TE,IND
+59,5,Mason,Always be Tuten,Luther Burden,WR,CHI
+60,5,Mike,Harvest is Jeanty,Drake Maye,QB,NE
+61,6,Mike,Harvest is Jeanty,Jameson Williams,WR,DET
+62,6,Mason,Always be Tuten,Bhayshul Tuten,RB,JAX
+63,6,Hannah,Lylas Lucky Lineup,Joe Burrow,QB,CIN
+64,6,TJ,Ladd McBonkers,Jadarian Price,RB,SEA
+65,6,Mackenzie,KamaraIsAGuyOnTheChiefs,Sam LaPorta,TE,DET
+66,6,Austin,Love Thy Nabers,Caleb Williams,QB,CHI
+67,6,Garrett,YouUnderestimateMyBowers,Mike Evans,WR,SF
+68,6,Zach,Mr. Maker Baefield,Christian Watson,WR,GB
+69,6,Ryan,RBotz,Rome Odunze,WR,CHI
+70,6,Riley,rileybotz,Jalen Hurts,QB,PHI
+71,6,Cody,The Bijantine Empire,Jayden Daniels,QB,WAS
+72,6,Ethan,Qbs doin the Cam Cam,Parker Washington,WR,JAX
+73,7,Ethan,Qbs doin the Cam Cam,Rico Dowdle,RB,PIT
+74,7,Cody,The Bijantine Empire,Carnell Tate,WR,TEN
+75,7,Riley,rileybotz,Kyle Pitts,TE,ATL
+76,7,Ryan,RBotz,Patrick Mahomes,QB,KC
+77,7,Zach,Mr. Maker Baefield,Justin Herbert,QB,LAC
+78,7,Garrett,YouUnderestimateMyBowers,Rhamondre Stevenson,RB,NE
+79,7,Austin,Love Thy Nabers,Marvin Harrison,WR,ARI
+80,7,Mackenzie,KamaraIsAGuyOnTheChiefs,DK Metcalf,WR,PIT
+81,7,TJ,Ladd McBonkers,Harold Fannin,TE,CLE
+82,7,Hannah,Lylas Lucky Lineup,Brian Thomas,WR,JAX
+83,7,Mason,Always be Tuten,J.K. Dobbins,RB,DEN
+84,7,Mike,Harvest is Jeanty,Jonathon Brooks,RB,CAR
+85,8,Mike,Harvest is Jeanty,Kyle Monangai,RB,CHI
+86,8,Mason,Always be Tuten,Michael Wilson,WR,ARI
+87,8,Hannah,Lylas Lucky Lineup,RJ Harvey,RB,DEN
+88,8,TJ,Ladd McBonkers,Tony Pollard,RB,TEN
+89,8,Mackenzie,KamaraIsAGuyOnTheChiefs,Courtland Sutton,WR,DEN
+90,8,Austin,Love Thy Nabers,Jordan Addison,WR,MIN
+91,8,Garrett,YouUnderestimateMyBowers,Trevor Lawrence,QB,JAX
+92,8,Zach,Mr. Maker Baefield,Kenny Gainwell,RB,TB
+93,8,Ryan,RBotz,Stefon Diggs,WR,WAS
+94,8,Riley,rileybotz,Chris Godwin,WR,TB
+95,8,Cody,The Bijantine Empire,Chuba Hubbard,RB,CAR
+96,8,Ethan,Qbs doin the Cam Cam,Alec Pierce,WR,IND
+97,9,Ethan,Qbs doin the Cam Cam,George Kittle,TE,SF
+98,9,Cody,The Bijantine Empire,Jordan Mason,RB,MIN
+99,9,Riley,rileybotz,Jayden Reed,WR,GB
+100,9,Ryan,RBotz,Aaron Jones,RB,MIN
+101,9,Zach,Mr. Maker Baefield,Makai Lemon,WR,PHI
+102,9,Garrett,YouUnderestimateMyBowers,Dalton Kincaid,TE,BUF
+103,9,Austin,Love Thy Nabers,Dak Prescott,QB,DAL
+104,9,Mackenzie,KamaraIsAGuyOnTheChiefs,Blake Corum,RB,LAR
+105,9,TJ,Ladd McBonkers,Quentin Johnston,WR,LAC
+106,9,Hannah,Lylas Lucky Lineup,Brandon Aubrey,K,DAL
+107,9,Mason,Always be Tuten,Michael Pittman,WR,PIT
+108,9,Mike,Harvest is Jeanty,Isaiah Likely,TE,NYG
+109,10,Mike,Harvest is Jeanty,Wan'Dale Robinson,WR,TEN
+110,10,Mason,Always be Tuten,MarShawn Lloyd,RB,GB
+111,10,Hannah,Lylas Lucky Lineup,KC Concepcion,WR,CLE
+112,10,TJ,Ladd McBonkers,Jacory Croskey-Merritt,RB,WAS
+113,10,Mackenzie,KamaraIsAGuyOnTheChiefs,Matthew Golden,WR,GB
+114,10,Austin,Love Thy Nabers,Josh Downs,WR,IND
+115,10,Garrett,YouUnderestimateMyBowers,Xavier Worthy,WR,KC
+116,10,Zach,Mr. Maker Baefield,Rachaad White,RB,WAS
+117,10,Ryan,RBotz,Seattle Seahawks,DEF,SEA
+118,10,Riley,rileybotz,Tyrone Tracy,RB,NYG
+119,10,Cody,The Bijantine Empire,Jalen Coker,WR,CAR
+120,10,Ethan,Qbs doin the Cam Cam,Jaxson Dart,QB,NYG
+121,11,Ethan,Qbs doin the Cam Cam,Denver Broncos,DEF,DEN
+122,11,Cody,The Bijantine Empire,Houston Texans,DEF,HOU
+123,11,Riley,rileybotz,Rashid Shaheed,WR,SEA
+124,11,Ryan,RBotz,Bo Nix,QB,DEN
+125,11,Zach,Mr. Maker Baefield,De'Zhaun Stribling,WR,SF
+126,11,Garrett,YouUnderestimateMyBowers,Philadelphia Eagles,DEF,PHI
+127,11,Austin,Love Thy Nabers,Khalil Shakir,WR,BUF
+128,11,Mackenzie,KamaraIsAGuyOnTheChiefs,Chris Rodriguez,RB,JAX
+129,11,TJ,Ladd McBonkers,Matthew Stafford,QB,LAR
+130,11,Hannah,Lylas Lucky Lineup,Minnesota Vikings,DEF,MIN
+131,11,Mason,Always be Tuten,Brock Purdy,QB,SF
+132,11,Mike,Harvest is Jeanty,Jordyn Tyson,WR,NO
+133,12,Mike,Harvest is Jeanty,Jonah Coleman,RB,DEN
+134,12,Mason,Always be Tuten,Dallas Goedert,TE,PHI
+135,12,Hannah,Lylas Lucky Lineup,Romeo Doubs,WR,NE
+136,12,TJ,Ladd McBonkers,Jake Ferguson,TE,DAL
+137,12,Mackenzie,KamaraIsAGuyOnTheChiefs,Cameron Dicker,K,LAC
+138,12,Austin,Love Thy Nabers,Keaton Mitchell,RB,LAC
+139,12,Garrett,YouUnderestimateMyBowers,Woody Marks,RB,HOU
+140,12,Zach,Mr. Maker Baefield,Mike Washington,RB,LV
+141,12,Ryan,RBotz,Isiah Pacheco,RB,DET
+142,12,Riley,rileybotz,Tyler Allgeier,RB,ARI
+143,12,Cody,The Bijantine Empire,Ja'Kobi Lane,WR,BAL
+144,12,Ethan,Qbs doin the Cam Cam,Mark Andrews,TE,BAL
+145,13,Ethan,Qbs doin the Cam Cam,Jakobi Meyers,WR,JAX
+146,13,Cody,The Bijantine Empire,Harrison Mevis,K,LAR
+147,13,Riley,rileybotz,New England Patriots,DEF,NE
+148,13,Ryan,RBotz,Harrison Butker,K,KC
+149,13,Zach,Mr. Maker Baefield,Cam Little,K,JAX
+150,13,Garrett,YouUnderestimateMyBowers,Ka'imi Fairbairn,K,HOU
+151,13,Austin,Love Thy Nabers,Jason Myers,K,SEA
+152,13,Mackenzie,KamaraIsAGuyOnTheChiefs,Deebo Samuel,WR,SF
+153,13,TJ,Ladd McBonkers,Baltimore Ravens,DEF,BAL
+154,13,Hannah,Lylas Lucky Lineup,Hunter Henry,TE,NE
+155,13,Mason,Always be Tuten,Adonai Mitchell,WR,NYJ
+156,13,Mike,Harvest is Jeanty,Zach Charbonnet,RB,SEA
+157,14,Mike,Harvest is Jeanty,Los Angeles Chargers,DEF,LAC
+158,14,Mason,Always be Tuten,Jared Goff,QB,DET
+159,14,Hannah,Lylas Lucky Lineup,Denzel Boston,WR,CLE
+160,14,TJ,Ladd McBonkers,Jake Bates,K,DET
+161,14,Mackenzie,KamaraIsAGuyOnTheChiefs,Kyler Murray,QB,MIN
+162,14,Austin,Love Thy Nabers,Jacksonville Jaguars,DEF,JAX
+163,14,Garrett,YouUnderestimateMyBowers,Fernando Mendoza,QB,LV
+164,14,Zach,Mr. Maker Baefield,Ted Hurst,WR,TB
+165,14,Ryan,RBotz,Juwan Johnson,TE,NO
+166,14,Riley,rileybotz,Eddy Pineiro,K,SF
+167,14,Cody,The Bijantine Empire,Oronde Gadsden,TE,LAC
+168,14,Ethan,Qbs doin the Cam Cam,Evan McPherson,K,CIN

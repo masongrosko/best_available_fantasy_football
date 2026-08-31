@@ -1,6 +1,15 @@
 
 {{ $src := .Get "src" }}
-{{ $data := getCSV "," $src }}
+{{ $data := slice }}
+{{ with try (resources.GetRemote $src) }}
+  {{ with .Err }}
+    {{ errorf "Unable to fetch CSV %q: %s" $src . }}
+  {{ else with .Value }}
+    {{ $data = transform.Unmarshal (dict "format" "csv" "targetType" "slice") .Content }}
+  {{ else }}
+    {{ errorf "Unable to fetch CSV %q" $src }}
+  {{ end }}
+{{ end }}
 
 <table>
   <thead>

@@ -4,6 +4,24 @@
     @extend .table-responsive;
 }
 
+// Visually separate draft context, market values, and comparison deltas.
+.td-content table.draft-pick-table {
+    td:nth-child(4),
+    td:nth-child(6),
+    td:nth-child(8) {
+        border-left: 1px solid rgba(108, 117, 125, .35);
+        padding-left: .75rem;
+    }
+}
+
+.td-content table.draft-summary-table {
+    td:nth-child(3),
+    td:nth-child(9) {
+        border-left: 1px solid rgba(108, 117, 125, .35);
+        padding-left: .75rem;
+    }
+}
+
 // details
 // https://freefrontend.com/html-details-summary-css/ Moritz Gießmann
 details {

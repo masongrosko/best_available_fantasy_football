@@ -1,14 +1,24 @@
 """Create a draft rating."""
 
+import html
+import os
 import re
+import tempfile
 import uuid
 from pathlib import Path
 from typing import Sequence, Tuple
 
-import matplotlib.pyplot as plt
+os.environ.setdefault(
+    "MPLCONFIGDIR", str(Path(tempfile.gettempdir()) / "baff-matplotlib")
+)
+
+import matplotlib
 import numpy as np
 import pandas as pd
-from espn_api.football import League
+try:
+    from espn_api.football import League
+except ImportError:  # ESPN support is optional for Sleeper-only report generation.
+    League = None  # type: ignore
 
 from best_available_fantasy_football.rankings_extraction import (
     BDGEDraftOrderExtractor,
@@ -18,6 +28,9 @@ from best_available_fantasy_football.rankings_extraction import (
     ManualDraftOrderExtractor,
     YahooHtmlDraftOrderExtractor,
 )
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
 
 GRADES = {
     "A+": (1, "![A+](/images/draft_grades/a_plus.png)"),
@@ -45,6 +58,65 @@ def get_grade(
 def presentable_headers(columns: list) -> dict:
     """Return a dict of orig columns to presentable headers."""
     return {x: " ".join([y.title() for y in x.split("_")]) for x in columns}
+
+
+def _compact_number(value, *, zero_as_dash=False):
+    """Format report-table numbers without mobile-unfriendly decimal noise."""
+    if pd.isna(value):
+        return ""
+    number = float(value)
+    if zero_as_dash and number == 0:
+        return "—"
+    return str(int(number)) if number.is_integer() else f"{number:g}"
+
+
+def _colored_delta(value):
+    """Color favorable/unfavorable deltas with Matplotlib's tab colors."""
+    if pd.isna(value):
+        return ""
+    number = float(value)
+    if number == 0:
+        return "—"
+    color = "#1f77b4" if number > 0 else "#ff7f0e"
+    return f'<strong style="color: {color};">{_compact_number(value)}</strong>'
+
+
+def _draft_pick_table(rows: pd.DataFrame, *, include_totals=False) -> str:
+    """Render the compact, consistently ordered draft-pick comparison table."""
+    columns = [
+        ("round_picked", "Round", False),
+        ("name", "Name", False),
+        ("pick_number", "Pick", False),
+        ("overall_rank", "Rank", False),
+        ("tier", "Tier", False),
+        ("overall_delta", "Rank Δ", True),
+        ("tier_delta", "Tier Δ", True),
+        ("ADP", "ADP", False),
+        ("adp_delta", "ADP Δ", True),
+    ]
+    table = pd.DataFrame(index=rows.index)
+    for source, header, zero_as_dash in columns:
+        if source == "name":
+            table[header] = (
+                rows[source].fillna("").map(lambda value: html.escape(str(value)))
+                if source in rows
+                else ""
+            )
+        elif source in rows:
+            table[header] = rows[source].map(
+                _colored_delta
+                if zero_as_dash
+                else lambda value: _compact_number(value)
+            )
+        else:
+            table[header] = ""
+    if include_totals:
+        totals = {header: "" for _, header, _ in columns}
+        totals["Name"] = "Total"
+        totals["Rank Δ"] = _colored_delta(rows["overall_delta"].sum(min_count=1))
+        totals["ADP Δ"] = _colored_delta(rows["adp_delta"].sum(min_count=1))
+        table.loc["total"] = totals
+    return table.to_html(index=False, escape=False, classes="draft-pick-table")
 
 
 def husky_supreme_2023():
@@ -118,13 +190,16 @@ def _clean_player_name_col(player_name_col: pd.Series) -> pd.Series:
     return (
         player_name_col.str.strip()
         .str.lower()
-        .str.replace(". ", "", regex=False)
+        # Collapse initials consistently: D.J., D. J., and DJ all become DJ.
+        .str.replace(".", "", regex=False)
+        .str.replace(r"\b([a-z])\s+(?=[a-z]\b)", r"\1", regex=True)
         .str.replace(r"\s+", "_", regex=True)
         .str.replace(r"\W", "", regex=True)
         .str.split("_")
         .str[0:2]
         .str.join("_")
         .str.replace("gabe_davis", "gabriel_davis")
+        .str.replace("kenny_gainwell", "kenneth_gainwell")
     )
 
 
@@ -482,9 +557,17 @@ def summary_chart(merged, images_path, report):
             Min=("overall_delta", "min"),
             Max=("overall_delta", "max"),
             Missing=("overall_delta", lambda x: x.isna().sum()),
+            Sum=("overall_delta", "sum"),
+            ADP_Rating=(
+                "adp_delta",
+                lambda x: get_grade(x.mean(), merged["drafter"].nunique()).split(
+                    "\n"
+                )[0],
+            ),
         )
         .sort_values("Mean", ascending=False)
     )
+    drafter_scores = drafter_scores.rename(columns={"ADP_Rating": "ADP Rating"})
     drafter_scores.index = drafter_scores.index.rename("Drafter")
     fig_name = f"{uuid.uuid4()}.png"
     plot_to_make = drafter_scores["Mean"]
@@ -501,13 +584,20 @@ def summary_chart(merged, images_path, report):
     drafter_scores["Min"] = drafter_scores["Min"].astype(int)
     drafter_scores["Max"] = drafter_scores["Max"].astype(int)
     drafter_scores["Missing"] = drafter_scores["Missing"].astype(int)
+    drafter_scores["Sum"] = drafter_scores["Sum"].astype(int)
     report.append(f"![summary_drafter_scores](draft_reports/images/{fig_name})")
-    report.append(drafter_scores.reset_index().to_html(index=False))
+    report.append(
+        drafter_scores.reset_index().to_html(
+            index=False, classes="draft-summary-table"
+        )
+    )
 
     return report
 
 
-def create_comparison(draft_table, rankings_table, reports_path, adp_table=None):
+def create_comparison(
+    draft_table, rankings_table, reports_path, adp_table=None, report_year=2023
+):
     """Create comparison of draft_table to some set ratings."""
     # Create images folder
     images_path = reports_path / "images"
@@ -538,7 +628,34 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
     merged["overall_delta"] = merged["pick_number"] - merged["Overall Rank"].astype(
         float
     )
+    # Positive means the player was selected later than the market expected
+    # (good value); negative means the player was selected earlier than ADP.
     merged["adp_delta"] = merged["pick_number"] - merged["ADP"].astype(float)
+
+    tier_columns = []
+    if "Tier" in merged.columns:
+        merged["tier"] = pd.to_numeric(
+            merged["Tier"].astype(str).str.extract(r"(\d+)")[0], errors="coerce"
+        )
+
+        def best_available_tier(row):
+            if pd.isna(row["pick_number"]):
+                return np.nan
+            available = merged.loc[
+                merged["pick_number"].isna()
+                | (merged["pick_number"] >= row["pick_number"]),
+                "tier",
+            ].dropna()
+            return available.min() if not available.empty else np.nan
+
+        merged["best_available_tier_number"] = merged.apply(
+            best_available_tier, axis=1
+        )
+        merged["tier_delta"] = merged["best_available_tier_number"] - merged["tier"]
+        merged["best_available_tier"] = merged["best_available_tier_number"].map(
+            lambda value: f"Tier {int(value)}" if pd.notna(value) else np.nan
+        )
+        tier_columns = ["Tier", "best_available_tier", "tier_delta"]
 
     merged["round_picked"] = merged["round"].copy()
     merged["overall_rank"] = merged["Overall Rank"].copy()
@@ -603,6 +720,15 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
         plt.cla()
         report.append(f"![rating_of_{drafter}_viz](../images/{fig_name})")
 
+        # Full draft table
+        report.append(
+            "### Full draft table "
+            f"{{#full-draft-table-{str(drafter).lower().replace(' ', '-')}}}"
+        )
+        report.append('{{< details "Full draft table" >}}')
+        report.append(_draft_pick_table(details, include_totals=True))
+        report.append("{{< /details >}}")
+
         # Great picks
         report.append(
             "### Great picks "
@@ -621,20 +747,7 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                 f"{'were' if len(great_picks) != 1 else 'was'} "
                 f"picked more than a full round later than expected."
             )
-            report.append(
-                great_picks[
-                    [
-                        "round_picked",
-                        "name",
-                        "overall_rank",
-                        "pick_number",
-                        "overall_delta",
-                        "ADP",
-                    ]
-                ]
-                .rename(columns=presentable_headers(list(great_picks)))
-                .to_html(index=False)
-            )
+            report.append(_draft_pick_table(great_picks))
 
         report.append("{{< /details >}}")
 
@@ -656,20 +769,7 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                 f"{'were' if len(reach_picks) != 1 else 'was'} "
                 f"picked more than a full round earlier than expected."
             )
-            report.append(
-                reach_picks[
-                    [
-                        "round_picked",
-                        "name",
-                        "overall_rank",
-                        "pick_number",
-                        "overall_delta",
-                        "ADP",
-                    ]
-                ]
-                .rename(columns=presentable_headers(list(reach_picks)))
-                .to_html(index=False)
-            )
+            report.append(_draft_pick_table(reach_picks))
 
         report.append("{{< /details >}}")
 
@@ -691,18 +791,7 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                 f"{'were' if len(unrated_picks) != 1 else 'was'} "
                 f"not rated by Mason."
             )
-            report.append(
-                unrated_picks[
-                    [
-                        "round_picked",
-                        "name",
-                        "pick_number",
-                        "ADP",
-                    ]
-                ]
-                .rename(columns=presentable_headers(list(unrated_picks)))
-                .to_html(index=False)
-            )
+            report.append(_draft_pick_table(unrated_picks))
 
         report.append("{{< /details >}}")
 
@@ -723,22 +812,7 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                 '" >}}'
             )
 
-            columns = [
-                "name",
-                "team_name",
-                "pick_number",
-                "overall_rank",
-                "position_rank",
-                "overall_delta",
-                "ADP",
-            ]
-            columns = [x for x in columns if x in pick_details.index]
-            report.append(
-                pick_details[columns]
-                .to_frame()
-                .T.rename(columns=presentable_headers(list(pick_details.index)))
-                .to_html(index=False)
-            )
+            report.append(_draft_pick_table(pick_details.to_frame().T))
 
             better_picks = merged.loc[
                 (
@@ -772,7 +846,11 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                     'that would have been better" >}}'
                 )
                 report.append(
-                    better_picks[["name", "overall_rank", "pick_number", "ADP"]]
+                    better_picks[
+                        ["name", "overall_rank", "Tier", "pick_number", "ADP"]
+                        if "Tier" in better_picks.columns
+                        else ["name", "overall_rank", "pick_number", "ADP"]
+                    ]
                     .rename(columns=presentable_headers(list(better_picks)))
                     .to_html(index=False)
                 )
@@ -791,6 +869,7 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
                             "name",
                             "position_rank",
                             "overall_rank",
+                            *(["Tier"] if "Tier" in better_position_picks.columns else []),
                             "pick_number",
                             "ADP",
                         ]
@@ -806,21 +885,21 @@ def create_comparison(draft_table, rankings_table, reports_path, adp_table=None)
 
         # Write out report
         report_location = reports_path / f"{drafter}_draft_report.md"
-        with open(report_location, "w") as f:
+        with open(report_location, "w", encoding="utf-8") as f:
             f.write(
                 re.sub(
                     r"\n\s+",
                     "\n",
                     f"""---
                     title: "{drafter} Draft Report"
-                    description: "2023 Draft Report for {drafter}"
+                    description: "{report_year} Draft Report for {drafter}"
                     weight: 50
                     ---
 
                     """,
                 )
             )
-        with open(report_location, "a") as f:
+        with open(report_location, "a", encoding="utf-8") as f:
             f.write(
                 "\n\n".join(report)
                 .replace('border="1"', "")

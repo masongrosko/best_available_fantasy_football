@@ -1,5 +1,5 @@
 module github.com/masongrosko/best_available_fantasy_football
 
-go 1.18
+go 1.23
 
-require github.com/google/docsy v0.4.0 // indirect
+require github.com/google/docsy/theme v0.16.0 // indirect
