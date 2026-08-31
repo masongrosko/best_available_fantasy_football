@@ -548,54 +548,96 @@ def report_per_ranking(draft_table, ratings, reports_path):
 
 
 def summary_chart(merged, images_path, report):
+    participant_count = merged["drafter"].nunique()
     drafter_scores = (
         merged.groupby("drafter")
         .agg(
-            Rating=(
+            Grade=(
                 "rating_delta",
-                lambda x: get_grade(x.mean(), merged["drafter"].nunique()).split("\n")[
-                    0
-                ],
+                lambda x: get_grade(x.mean(), participant_count).split("\n")[0],
             ),
-            Mean=("overall_delta", "mean"),
-            Median=("overall_delta", "median"),
-            Min=("overall_delta", "min"),
-            Max=("overall_delta", "max"),
-            Missing=("overall_delta", lambda x: x.isna().sum()),
-            Sum=("overall_delta", "sum"),
-            ADP_Rating=(
+            Grade_Delta=("rating_delta", "mean"),
+            ADP_Grade=(
                 "adp_delta",
-                lambda x: get_grade(x.mean(), merged["drafter"].nunique()).split(
-                    "\n"
-                )[0],
+                lambda x: get_grade(x.mean(), participant_count).split("\n")[0],
             ),
+            ADP_Delta=("adp_delta", "mean"),
+            Rank_Grade=(
+                "overall_delta",
+                lambda x: get_grade(x.mean(), participant_count).split("\n")[0],
+            ),
+            Rank_Mean=("overall_delta", "mean"),
+            Rank_Median=("overall_delta", "median"),
+            Rank_Min=("overall_delta", "min"),
+            Rank_Max=("overall_delta", "max"),
+            Missing=("overall_delta", lambda x: x.isna().sum()),
+            Rank_Sum=("overall_delta", "sum"),
         )
-        .sort_values("Mean", ascending=False)
+        .sort_values("Grade_Delta", ascending=False)
     )
-    drafter_scores = drafter_scores.rename(columns={"ADP_Rating": "ADP Rating"})
     drafter_scores.index = drafter_scores.index.rename("Drafter")
     fig_name = f"{uuid.uuid4()}.png"
-    plot_to_make = drafter_scores["Mean"]
+    plot_to_make = drafter_scores["Grade_Delta"]
     plot_to_make.plot.bar(
-        color=(drafter_scores["Mean"] > 0).map({True: "tab:blue", False: "tab:orange"}),
+        color=(drafter_scores["Grade_Delta"] > 0).map(
+            {True: "tab:blue", False: "tab:orange"}
+        ),
         alpha=0.75,
         rot=90,
     ).get_figure()  # type: ignore
-    plt.ylabel("Mean Delta")
+    plt.ylabel("Grade Delta")
     plt.tight_layout()
     plt.savefig(images_path / fig_name)
     plt.cla()
-    drafter_scores = drafter_scores.round(2)
-    drafter_scores["Min"] = drafter_scores["Min"].astype(int)
-    drafter_scores["Max"] = drafter_scores["Max"].astype(int)
-    drafter_scores["Missing"] = drafter_scores["Missing"].astype(int)
-    drafter_scores["Sum"] = drafter_scores["Sum"].astype(int)
+
+    visible_scores = drafter_scores[
+        ["Grade", "Grade_Delta", "ADP_Grade", "ADP_Delta"]
+    ].rename(
+        columns={
+            "Grade_Delta": "Grade Δ",
+            "ADP_Grade": "ADP Grade",
+            "ADP_Delta": "ADP Δ",
+        }
+    )
+    visible_scores = visible_scores.round(2)
+
+    ranking_details = drafter_scores[
+        [
+            "Rank_Grade",
+            "Rank_Mean",
+            "Rank_Median",
+            "Rank_Min",
+            "Rank_Max",
+            "Missing",
+            "Rank_Sum",
+        ]
+    ].rename(
+        columns={
+            "Rank_Grade": "Rank Grade",
+            "Rank_Mean": "Mean",
+            "Rank_Median": "Median",
+            "Rank_Min": "Min",
+            "Rank_Max": "Max",
+            "Rank_Sum": "Sum",
+        }
+    )
+    ranking_details = ranking_details.sort_values("Mean", ascending=False).round(2)
+    for column in ["Min", "Max", "Missing", "Sum"]:
+        ranking_details[column] = ranking_details[column].astype(int)
+
     report.append(f"![summary_drafter_scores](draft_reports/images/{fig_name})")
     report.append(
-        drafter_scores.reset_index().to_html(
+        visible_scores.reset_index().to_html(
             index=False, classes="draft-summary-table"
         )
     )
+    report.append('{{< details "Ranking details" >}}')
+    report.append(
+        ranking_details.reset_index().to_html(
+            index=False, classes="ranking-details-table"
+        )
+    )
+    report.append("{{< /details >}}")
 
     return report
 
@@ -685,13 +727,13 @@ def create_comparison(
     }
 
     # Summary report
-    with open(reports_path / ".." / "_index.md") as f:
+    with open(reports_path / ".." / "_index.md", encoding="utf-8") as f:
         report = f.read()
 
     report = [report.split("\n---\n")[0] + "\n---"]
     report = summary_chart(merged, images_path, report)
 
-    with open(reports_path / ".." / "_index.md", "w") as f:
+    with open(reports_path / ".." / "_index.md", "w", encoding="utf-8") as f:
         f.write(
             "\n\n".join(report)
             .replace('border="1"', "")

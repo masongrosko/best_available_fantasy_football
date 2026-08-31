@@ -4,20 +4,119 @@ description: "2026 half-PPR draft ratings"
 weight: 10
 ---
 
-![summary_drafter_scores](draft_reports/images/d4bd8917-2063-41ce-bf27-bc1e27dd6e5c.png)
+![summary_drafter_scores](draft_reports/images/e817517a-8d9e-4ceb-926f-efd06a910acb.png)
 
 <table  class="dataframe draft-summary-table">
   <thead>
     <tr style="text-align: left;">
       <th>Drafter</th>
-      <th>Rating</th>
+      <th>Grade</th>
+      <th>Grade Δ</th>
+      <th>ADP Grade</th>
+      <th>ADP Δ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mason</td>
+      <td>A+</td>
+      <td>19.36</td>
+      <td>B</td>
+      <td>-2.07</td>
+    </tr>
+    <tr>
+      <td>Mike</td>
+      <td>A</td>
+      <td>0.57</td>
+      <td>A</td>
+      <td>5.29</td>
+    </tr>
+    <tr>
+      <td>Mackenzie</td>
+      <td>A</td>
+      <td>0.36</td>
+      <td>B</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>TJ</td>
+      <td>B</td>
+      <td>-1.43</td>
+      <td>A</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>Ethan</td>
+      <td>B</td>
+      <td>-5.15</td>
+      <td>A</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>Hannah</td>
+      <td>C</td>
+      <td>-7.36</td>
+      <td>B</td>
+      <td>-5.86</td>
+    </tr>
+    <tr>
+      <td>Austin</td>
+      <td>C</td>
+      <td>-7.93</td>
+      <td>C</td>
+      <td>-6.93</td>
+    </tr>
+    <tr>
+      <td>Garrett</td>
+      <td>C</td>
+      <td>-8.36</td>
+      <td>B</td>
+      <td>-2.79</td>
+    </tr>
+    <tr>
+      <td>Zach</td>
+      <td>D</td>
+      <td>-12.29</td>
+      <td>D</td>
+      <td>-13.79</td>
+    </tr>
+    <tr>
+      <td>Riley</td>
+      <td>D</td>
+      <td>-15.00</td>
+      <td>C</td>
+      <td>-6.71</td>
+    </tr>
+    <tr>
+      <td>Ryan</td>
+      <td>D</td>
+      <td>-17.86</td>
+      <td>D</td>
+      <td>-17.46</td>
+    </tr>
+    <tr>
+      <td>Cody</td>
+      <td>F</td>
+      <td>-20.21</td>
+      <td>D</td>
+      <td>-16.50</td>
+    </tr>
+  </tbody>
+</table>
+
+{{< details "Ranking details" >}}
+
+<table  class="dataframe ranking-details-table">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Drafter</th>
+      <th>Rank Grade</th>
       <th>Mean</th>
       <th>Median</th>
       <th>Min</th>
       <th>Max</th>
       <th>Missing</th>
       <th>Sum</th>
-      <th>ADP Rating</th>
     </tr>
   </thead>
   <tbody>
@@ -30,7 +129,6 @@ weight: 10
       <td>46</td>
       <td>0</td>
       <td>271</td>
-      <td>B</td>
     </tr>
     <tr>
       <td>Mackenzie</td>
@@ -41,106 +139,96 @@ weight: 10
       <td>37</td>
       <td>1</td>
       <td>74</td>
-      <td>B</td>
     </tr>
     <tr>
       <td>TJ</td>
-      <td>B</td>
+      <td>A</td>
       <td>4.75</td>
       <td>3.0</td>
       <td>-22</td>
       <td>38</td>
       <td>2</td>
       <td>57</td>
-      <td>A</td>
     </tr>
     <tr>
       <td>Zach</td>
-      <td>D</td>
+      <td>A</td>
       <td>2.18</td>
       <td>1.0</td>
       <td>-23</td>
       <td>36</td>
       <td>3</td>
       <td>24</td>
-      <td>D</td>
     </tr>
     <tr>
       <td>Hannah</td>
-      <td>C</td>
+      <td>A</td>
       <td>1.17</td>
       <td>0.0</td>
       <td>-29</td>
       <td>36</td>
       <td>2</td>
       <td>14</td>
-      <td>B</td>
     </tr>
     <tr>
       <td>Ethan</td>
-      <td>B</td>
+      <td>A</td>
       <td>0.83</td>
       <td>4.5</td>
       <td>-62</td>
       <td>65</td>
       <td>2</td>
       <td>10</td>
-      <td>A</td>
     </tr>
     <tr>
       <td>Austin</td>
-      <td>C</td>
+      <td>B</td>
       <td>-2.92</td>
       <td>1.0</td>
       <td>-42</td>
       <td>35</td>
       <td>2</td>
       <td>-35</td>
-      <td>C</td>
     </tr>
     <tr>
       <td>Cody</td>
-      <td>F</td>
+      <td>B</td>
       <td>-3.42</td>
       <td>-0.5</td>
       <td>-30</td>
       <td>14</td>
       <td>2</td>
       <td>-41</td>
-      <td>D</td>
     </tr>
     <tr>
       <td>Mike</td>
-      <td>A</td>
+      <td>B</td>
       <td>-3.69</td>
       <td>-2.0</td>
       <td>-35</td>
       <td>29</td>
       <td>1</td>
       <td>-48</td>
-      <td>A</td>
     </tr>
     <tr>
       <td>Garrett</td>
-      <td>C</td>
+      <td>B</td>
       <td>-5.17</td>
       <td>-1.0</td>
       <td>-32</td>
       <td>15</td>
       <td>2</td>
       <td>-62</td>
-      <td>B</td>
     </tr>
     <tr>
       <td>Riley</td>
-      <td>D</td>
+      <td>C</td>
       <td>-10.42</td>
       <td>-6.0</td>
       <td>-59</td>
       <td>6</td>
       <td>2</td>
       <td>-125</td>
-      <td>C</td>
     </tr>
     <tr>
       <td>Ryan</td>
@@ -151,7 +239,8 @@ weight: 10
       <td>40</td>
       <td>2</td>
       <td>-149</td>
-      <td>D</td>
     </tr>
   </tbody>
 </table>
+
+{{< /details >}}

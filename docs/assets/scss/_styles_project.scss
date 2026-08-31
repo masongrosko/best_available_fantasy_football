@@ -14,9 +14,51 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    .td-content table.draft-pick-table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        font-size: .78rem;
+        scrollbar-width: thin;
+
+        th,
+        td {
+            padding: .35rem .45rem;
+        }
+
+        // Keep the player visible while swiping through rank and ADP groups.
+        th:nth-child(2),
+        td:nth-child(2) {
+            position: sticky;
+            left: 0;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: 1px 0 rgba(108, 117, 125, .2);
+        }
+
+        th:nth-child(2) {
+            z-index: 2;
+        }
+
+        tbody tr:nth-of-type(odd) td:nth-child(2) {
+            background-color: #f2f2f2;
+        }
+    }
+}
+
 .td-content table.draft-summary-table {
-    td:nth-child(3),
-    td:nth-child(9) {
+    td:nth-child(4) {
+        border-left: 1px solid rgba(108, 117, 125, .35);
+        padding-left: .75rem;
+    }
+}
+
+.td-content table.ranking-details-table {
+    td:nth-child(3) {
         border-left: 1px solid rgba(108, 117, 125, .35);
         padding-left: .75rem;
     }

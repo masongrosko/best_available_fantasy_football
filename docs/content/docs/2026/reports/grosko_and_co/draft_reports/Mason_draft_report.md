@@ -11,7 +11,7 @@ A+
 
 ![A+](/images/draft_grades/a_plus.png)
 
-![rating_of_Mason_viz](../images/28cb5224-5075-4a9e-8249-c37f98ca2ea3.png)
+![rating_of_Mason_viz](../images/41a05957-dab0-4bda-8f30-ffbe6b88229e.png)
 
 ### Full draft table {#full-draft-table-mason}
 

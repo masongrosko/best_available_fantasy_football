@@ -11,7 +11,7 @@ F
 
 ![F](/images/draft_grades/f.png)
 
-![rating_of_Cody_viz](../images/72de8074-4d43-4272-92e2-358ecbc92f74.png)
+![rating_of_Cody_viz](../images/8ad59b48-f208-443c-9ddd-24a2c3be0965.png)
 
 ### Full draft table {#full-draft-table-cody}
 

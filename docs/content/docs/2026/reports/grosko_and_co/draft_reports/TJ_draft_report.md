@@ -11,7 +11,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![rating_of_TJ_viz](../images/1b041d39-cec2-418d-bbe7-8e940e195a5c.png)
+![rating_of_TJ_viz](../images/360da55f-cf3d-4236-b5ed-69df271218b9.png)
 
 ### Full draft table {#full-draft-table-tj}
 
