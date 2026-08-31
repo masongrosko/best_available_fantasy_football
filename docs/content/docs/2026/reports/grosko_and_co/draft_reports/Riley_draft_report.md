@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-riley}
 
-C
+D
 
-![C](/images/draft_grades/c.png)
+![D](/images/draft_grades/d.png)
 
-![rating_of_Riley_viz](../images/471a1c71-ea1a-4b69-8978-ba797ef4d044.png)
+![rating_of_Riley_viz](../images/5d810b77-8088-4832-bf36-089d0d4f9b08.png)
 
 ### Full draft table {#full-draft-table-riley}
 

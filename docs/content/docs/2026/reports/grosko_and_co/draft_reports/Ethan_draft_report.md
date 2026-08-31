@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-ethan}
 
-A
+B
 
-![A](/images/draft_grades/a.png)
+![B](/images/draft_grades/b.png)
 
-![rating_of_Ethan_viz](../images/1edab95c-c00d-4644-b37a-e3c5478669d5.png)
+![rating_of_Ethan_viz](../images/d33dde1e-863f-49e9-8206-3e4c770fca96.png)
 
 ### Full draft table {#full-draft-table-ethan}
 

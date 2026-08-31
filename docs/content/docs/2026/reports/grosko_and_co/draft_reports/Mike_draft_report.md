@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-mike}
 
-B
+A
 
-![B](/images/draft_grades/b.png)
+![A](/images/draft_grades/a.png)
 
-![rating_of_Mike_viz](../images/ecd09531-8c0e-405a-8600-3b8af23fbce3.png)
+![rating_of_Mike_viz](../images/595828f1-5cc5-4378-a93a-5aac4cd91fcf.png)
 
 ### Full draft table {#full-draft-table-mike}
 

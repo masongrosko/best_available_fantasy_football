@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-tj}
 
-A
+B
 
-![A](/images/draft_grades/a.png)
+![B](/images/draft_grades/b.png)
 
-![rating_of_TJ_viz](../images/07413590-42b2-4f3d-95ed-7dddd9d7aa3b.png)
+![rating_of_TJ_viz](../images/1b041d39-cec2-418d-bbe7-8e940e195a5c.png)
 
 ### Full draft table {#full-draft-table-tj}
 

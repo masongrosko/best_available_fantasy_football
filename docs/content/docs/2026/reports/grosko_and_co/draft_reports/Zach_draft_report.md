@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-zach}
 
-A
+D
 
-![A](/images/draft_grades/a.png)
+![D](/images/draft_grades/d.png)
 
-![rating_of_Zach_viz](../images/e6173c2d-c3e3-4843-8693-6043833bf9d1.png)
+![rating_of_Zach_viz](../images/b292c94b-15b3-46f8-8a7d-05110769726b.png)
 
 ### Full draft table {#full-draft-table-zach}
 

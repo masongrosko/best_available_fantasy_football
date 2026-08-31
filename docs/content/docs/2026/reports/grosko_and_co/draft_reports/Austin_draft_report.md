@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-austin}
 
-B
+C
 
-![B](/images/draft_grades/b.png)
+![C](/images/draft_grades/c.png)
 
-![rating_of_Austin_viz](../images/221e259d-8aac-4b02-aefc-f2d1e8bf67e5.png)
+![rating_of_Austin_viz](../images/53084ba1-fbe3-492f-a349-bd774d7e4a87.png)
 
 ### Full draft table {#full-draft-table-austin}
 

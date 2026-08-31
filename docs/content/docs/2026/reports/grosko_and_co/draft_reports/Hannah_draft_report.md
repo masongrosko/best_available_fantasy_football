@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-hannah}
 
-A
+C
 
-![A](/images/draft_grades/a.png)
+![C](/images/draft_grades/c.png)
 
-![rating_of_Hannah_viz](../images/807ab726-7564-47a0-900b-442852e1cb73.png)
+![rating_of_Hannah_viz](../images/cd3638c7-aab3-4904-9997-6b08f29b08a6.png)
 
 ### Full draft table {#full-draft-table-hannah}
 

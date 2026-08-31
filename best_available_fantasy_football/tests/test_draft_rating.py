@@ -7,6 +7,7 @@ import pandas as pd
 from best_available_fantasy_football.draft_rating import (
     _clean_player_name_col,
     _draft_pick_table,
+    _rating_delta,
 )
 
 
@@ -84,6 +85,20 @@ class TestDraftPickTable(unittest.TestCase):
         self.assertIn("<td>Total</td>", html)
         self.assertIn(">7</strong>", html)
         self.assertIn(">-6</strong>", html)
+
+
+class TestRatingDelta(unittest.TestCase):
+    """Grades should fall back to ADP only for unranked selections."""
+
+    def test_adp_fills_missing_rank_delta(self):
+        overall = pd.Series([12.0, float("nan"), float("nan")])
+        adp = pd.Series([99.0, -5.0, float("nan")])
+
+        result = _rating_delta(overall, adp)
+
+        self.assertEqual(result.iloc[0], 12.0)
+        self.assertEqual(result.iloc[1], -5.0)
+        self.assertTrue(pd.isna(result.iloc[2]))
 
 
 if __name__ == "__main__":

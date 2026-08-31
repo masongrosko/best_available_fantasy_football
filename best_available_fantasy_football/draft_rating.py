@@ -81,6 +81,11 @@ def _colored_delta(value):
     return f'<strong style="color: {color};">{_compact_number(value)}</strong>'
 
 
+def _rating_delta(overall_delta: pd.Series, adp_delta: pd.Series) -> pd.Series:
+    """Use ADP value only when an overall ranking is unavailable."""
+    return overall_delta.fillna(adp_delta)
+
+
 def _draft_pick_table(rows: pd.DataFrame, *, include_totals=False) -> str:
     """Render the compact, consistently ordered draft-pick comparison table."""
     columns = [
@@ -547,7 +552,7 @@ def summary_chart(merged, images_path, report):
         merged.groupby("drafter")
         .agg(
             Rating=(
-                "overall_delta",
+                "rating_delta",
                 lambda x: get_grade(x.mean(), merged["drafter"].nunique()).split("\n")[
                     0
                 ],
@@ -631,6 +636,9 @@ def create_comparison(
     # Positive means the player was selected later than the market expected
     # (good value); negative means the player was selected earlier than ADP.
     merged["adp_delta"] = merged["pick_number"] - merged["ADP"].astype(float)
+    merged["rating_delta"] = _rating_delta(
+        merged["overall_delta"], merged["adp_delta"]
+    )
 
     tier_columns = []
     if "Tier" in merged.columns:
@@ -702,7 +710,7 @@ def create_comparison(
             "### Overall Rating "
             f"{{#overall-rating-{str(drafter).lower().replace(' ', '-')}}}"
         )
-        report.append(f"{get_grade(details['overall_delta'].mean(), round_len)}")
+        report.append(f"{get_grade(details['rating_delta'].mean(), round_len)}")
         fig_name = f"{uuid.uuid4()}.png"
         plot_to_make = details.reset_index()["overall_delta"]
         plot_to_make.index += 1

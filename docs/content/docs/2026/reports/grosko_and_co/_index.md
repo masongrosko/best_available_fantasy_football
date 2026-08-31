@@ -4,7 +4,7 @@ description: "2026 half-PPR draft ratings"
 weight: 10
 ---
 
-![summary_drafter_scores](draft_reports/images/f8c8e1c8-2ed4-43b5-babb-d2216961bac9.png)
+![summary_drafter_scores](draft_reports/images/d4bd8917-2063-41ce-bf27-bc1e27dd6e5c.png)
 
 <table  class="dataframe draft-summary-table">
   <thead>
@@ -45,7 +45,7 @@ weight: 10
     </tr>
     <tr>
       <td>TJ</td>
-      <td>A</td>
+      <td>B</td>
       <td>4.75</td>
       <td>3.0</td>
       <td>-22</td>
@@ -56,7 +56,7 @@ weight: 10
     </tr>
     <tr>
       <td>Zach</td>
-      <td>A</td>
+      <td>D</td>
       <td>2.18</td>
       <td>1.0</td>
       <td>-23</td>
@@ -67,7 +67,7 @@ weight: 10
     </tr>
     <tr>
       <td>Hannah</td>
-      <td>A</td>
+      <td>C</td>
       <td>1.17</td>
       <td>0.0</td>
       <td>-29</td>
@@ -78,7 +78,7 @@ weight: 10
     </tr>
     <tr>
       <td>Ethan</td>
-      <td>A</td>
+      <td>B</td>
       <td>0.83</td>
       <td>4.5</td>
       <td>-62</td>
@@ -89,7 +89,7 @@ weight: 10
     </tr>
     <tr>
       <td>Austin</td>
-      <td>B</td>
+      <td>C</td>
       <td>-2.92</td>
       <td>1.0</td>
       <td>-42</td>
@@ -100,7 +100,7 @@ weight: 10
     </tr>
     <tr>
       <td>Cody</td>
-      <td>B</td>
+      <td>F</td>
       <td>-3.42</td>
       <td>-0.5</td>
       <td>-30</td>
@@ -111,7 +111,7 @@ weight: 10
     </tr>
     <tr>
       <td>Mike</td>
-      <td>B</td>
+      <td>A</td>
       <td>-3.69</td>
       <td>-2.0</td>
       <td>-35</td>
@@ -122,7 +122,7 @@ weight: 10
     </tr>
     <tr>
       <td>Garrett</td>
-      <td>B</td>
+      <td>C</td>
       <td>-5.17</td>
       <td>-1.0</td>
       <td>-32</td>
@@ -133,7 +133,7 @@ weight: 10
     </tr>
     <tr>
       <td>Riley</td>
-      <td>C</td>
+      <td>D</td>
       <td>-10.42</td>
       <td>-6.0</td>
       <td>-59</td>

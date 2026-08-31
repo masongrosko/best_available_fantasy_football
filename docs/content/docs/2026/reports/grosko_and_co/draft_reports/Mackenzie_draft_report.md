@@ -11,7 +11,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![rating_of_Mackenzie_viz](../images/85d90a99-f58c-4dd5-96c5-1c701c5d3280.png)
+![rating_of_Mackenzie_viz](../images/2a42e23b-0006-4f42-9f10-163bad2bcdb9.png)
 
 ### Full draft table {#full-draft-table-mackenzie}
 

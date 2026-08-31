@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-garrett}
 
-B
+C
 
-![B](/images/draft_grades/b.png)
+![C](/images/draft_grades/c.png)
 
-![rating_of_Garrett_viz](../images/51cc3fa4-9457-450c-85ba-c0e181b8e80a.png)
+![rating_of_Garrett_viz](../images/19d74697-8c1c-4b20-8817-b0db7b8e469e.png)
 
 ### Full draft table {#full-draft-table-garrett}
 

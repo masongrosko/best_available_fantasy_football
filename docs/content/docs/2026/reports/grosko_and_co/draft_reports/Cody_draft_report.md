@@ -7,11 +7,11 @@ weight: 50
 
 ### Overall Rating {#overall-rating-cody}
 
-B
+F
 
-![B](/images/draft_grades/b.png)
+![F](/images/draft_grades/f.png)
 
-![rating_of_Cody_viz](../images/de7b231a-ba11-4a81-9139-13600a8aae41.png)
+![rating_of_Cody_viz](../images/72de8074-4d43-4272-92e2-358ecbc92f74.png)
 
 ### Full draft table {#full-draft-table-cody}
 
