@@ -11,7 +11,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![rating_of_Garrett_viz](../images/a22baa6f-4df7-4c3e-b4f5-854de5f18f7d.png)
+![rating_of_Garrett_viz](../images/51cc3fa4-9457-450c-85ba-c0e181b8e80a.png)
 
 ### Full draft table {#full-draft-table-garrett}
 
@@ -62,8 +62,8 @@ B
       <td>7</td>
       <td><strong style="color: #1f77b4;">1</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>24</td>
-      <td><strong style="color: #1f77b4;">6</strong></td>
+      <td>25</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
     <tr>
       <td>4</td>
@@ -73,8 +73,8 @@ B
       <td>9</td>
       <td><strong style="color: #ff7f0e;">-15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>45</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>48</td>
+      <td><strong style="color: #ff7f0e;">-5</strong></td>
     </tr>
     <tr>
       <td>5</td>
@@ -84,8 +84,8 @@ B
       <td>9</td>
       <td><strong style="color: #1f77b4;">9</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>47</td>
-      <td><strong style="color: #1f77b4;">7</strong></td>
+      <td>44</td>
+      <td><strong style="color: #1f77b4;">10</strong></td>
     </tr>
     <tr>
       <td>6</td>
@@ -106,8 +106,8 @@ B
       <td>10</td>
       <td><strong style="color: #1f77b4;">10</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>76</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>74</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
     <tr>
       <td>8</td>
@@ -117,8 +117,8 @@ B
       <td>12</td>
       <td><strong style="color: #1f77b4;">15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>98</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>86</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
     <tr>
       <td>9</td>
@@ -128,8 +128,8 @@ B
       <td>13</td>
       <td>—</td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>90</td>
-      <td><strong style="color: #1f77b4;">12</strong></td>
+      <td>97</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -139,8 +139,8 @@ B
       <td>15</td>
       <td><strong style="color: #ff7f0e;">-27</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>128</td>
-      <td><strong style="color: #ff7f0e;">-13</strong></td>
+      <td>126</td>
+      <td><strong style="color: #ff7f0e;">-11</strong></td>
     </tr>
     <tr>
       <td>11</td>
@@ -150,8 +150,8 @@ B
       <td></td>
       <td></td>
       <td></td>
-      <td>62</td>
-      <td><strong style="color: #1f77b4;">64</strong></td>
+      <td>127</td>
+      <td><strong style="color: #ff7f0e;">-1</strong></td>
     </tr>
     <tr>
       <td>12</td>
@@ -161,8 +161,8 @@ B
       <td>16</td>
       <td><strong style="color: #ff7f0e;">-23</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>141</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>137</td>
+      <td><strong style="color: #1f77b4;">2</strong></td>
     </tr>
     <tr>
       <td>13</td>
@@ -172,8 +172,8 @@ B
       <td></td>
       <td></td>
       <td></td>
-      <td>138</td>
-      <td><strong style="color: #1f77b4;">12</strong></td>
+      <td>204</td>
+      <td><strong style="color: #ff7f0e;">-54</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -183,8 +183,8 @@ B
       <td>19</td>
       <td><strong style="color: #ff7f0e;">-32</strong></td>
       <td><strong style="color: #ff7f0e;">-5</strong></td>
-      <td>189</td>
-      <td><strong style="color: #ff7f0e;">-26</strong></td>
+      <td>165</td>
+      <td><strong style="color: #ff7f0e;">-2</strong></td>
     </tr>
     <tr>
       <td></td>
@@ -195,7 +195,7 @@ B
       <td><strong style="color: #ff7f0e;">-62</strong></td>
       <td></td>
       <td></td>
-      <td><strong style="color: #1f77b4;">56</strong></td>
+      <td><strong style="color: #ff7f0e;">-39</strong></td>
     </tr>
   </tbody>
 </table>
@@ -231,8 +231,8 @@ Of the 14 players drafted by Garrett, 1 pick was picked more than a full round l
       <td>12</td>
       <td><strong style="color: #1f77b4;">15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>98</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>86</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -268,8 +268,8 @@ Of the 14 players drafted by Garrett, 4 picks were picked more than a full round
       <td>9</td>
       <td><strong style="color: #ff7f0e;">-15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>45</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>48</td>
+      <td><strong style="color: #ff7f0e;">-5</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -279,8 +279,8 @@ Of the 14 players drafted by Garrett, 4 picks were picked more than a full round
       <td>15</td>
       <td><strong style="color: #ff7f0e;">-27</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>128</td>
-      <td><strong style="color: #ff7f0e;">-13</strong></td>
+      <td>126</td>
+      <td><strong style="color: #ff7f0e;">-11</strong></td>
     </tr>
     <tr>
       <td>12</td>
@@ -290,8 +290,8 @@ Of the 14 players drafted by Garrett, 4 picks were picked more than a full round
       <td>16</td>
       <td><strong style="color: #ff7f0e;">-23</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>141</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>137</td>
+      <td><strong style="color: #1f77b4;">2</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -301,8 +301,8 @@ Of the 14 players drafted by Garrett, 4 picks were picked more than a full round
       <td>19</td>
       <td><strong style="color: #ff7f0e;">-32</strong></td>
       <td><strong style="color: #ff7f0e;">-5</strong></td>
-      <td>189</td>
-      <td><strong style="color: #ff7f0e;">-26</strong></td>
+      <td>165</td>
+      <td><strong style="color: #ff7f0e;">-2</strong></td>
     </tr>
   </tbody>
 </table>
@@ -338,8 +338,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>62</td>
-      <td><strong style="color: #1f77b4;">64</strong></td>
+      <td>127</td>
+      <td><strong style="color: #ff7f0e;">-1</strong></td>
     </tr>
     <tr>
       <td>13</td>
@@ -349,8 +349,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>138</td>
-      <td><strong style="color: #1f77b4;">12</strong></td>
+      <td>204</td>
+      <td><strong style="color: #ff7f0e;">-54</strong></td>
     </tr>
   </tbody>
 </table>
@@ -475,28 +475,28 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>16</td>
       <td>Tier 5</td>
       <td>25</td>
-      <td>21</td>
+      <td>20</td>
     </tr>
     <tr>
       <td>Malik Nabers</td>
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
     <tr>
       <td>Brock Bowers</td>
       <td>19</td>
       <td>Tier 5</td>
       <td>20</td>
-      <td>22</td>
+      <td>21</td>
     </tr>
     <tr>
       <td>Nico Collins</td>
       <td>20</td>
       <td>Tier 6</td>
       <td>22</td>
-      <td>23</td>
+      <td>22</td>
     </tr>
   </tbody>
 </table>
@@ -523,7 +523,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>16</td>
       <td>Tier 5</td>
       <td>25</td>
-      <td>21</td>
+      <td>20</td>
     </tr>
     <tr>
       <td>Malik Nabers</td>
@@ -531,7 +531,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
     <tr>
       <td>Nico Collins</td>
@@ -539,7 +539,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>20</td>
       <td>Tier 6</td>
       <td>22</td>
-      <td>23</td>
+      <td>22</td>
     </tr>
   </tbody>
 </table>
@@ -573,8 +573,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>7</td>
       <td><strong style="color: #1f77b4;">1</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>24</td>
-      <td><strong style="color: #1f77b4;">6</strong></td>
+      <td>25</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -597,21 +597,21 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
     <tr>
       <td>Chris Olave</td>
       <td>24</td>
       <td>Tier 6</td>
       <td>32</td>
-      <td>31</td>
+      <td>29</td>
     </tr>
     <tr>
       <td>DeVonta Smith</td>
       <td>26</td>
       <td>Tier 6</td>
       <td>31</td>
-      <td>35</td>
+      <td>31</td>
     </tr>
   </tbody>
 </table>
@@ -645,8 +645,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>9</td>
       <td><strong style="color: #ff7f0e;">-15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>45</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>48</td>
+      <td><strong style="color: #ff7f0e;">-5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -676,7 +676,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>41</td>
       <td>Tier 8</td>
       <td>46</td>
-      <td>36</td>
+      <td>37</td>
     </tr>
     <tr>
       <td>Colston Loveland</td>
@@ -690,91 +690,91 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>43</td>
       <td>Tier 8</td>
       <td>58</td>
-      <td>50</td>
+      <td>51</td>
     </tr>
     <tr>
       <td>Jaylen Waddle</td>
       <td>45</td>
       <td>Tier 9</td>
       <td>54</td>
-      <td>47</td>
+      <td>44</td>
     </tr>
     <tr>
       <td>Luther Burden III</td>
       <td>46</td>
       <td>Tier 9</td>
       <td>59</td>
-      <td>59</td>
+      <td>55</td>
     </tr>
     <tr>
       <td>Davante Adams</td>
       <td>47</td>
       <td>Tier 9</td>
       <td>56</td>
-      <td>56</td>
+      <td>53</td>
     </tr>
     <tr>
       <td>D.J. Moore</td>
       <td>48</td>
       <td>Tier 9</td>
       <td>57</td>
-      <td>55</td>
+      <td>54</td>
     </tr>
     <tr>
       <td>Bhayshul Tuten</td>
       <td>49</td>
       <td>Tier 9</td>
       <td>62</td>
-      <td>60</td>
+      <td>58</td>
     </tr>
     <tr>
       <td>Rome Odunze</td>
       <td>50</td>
       <td>Tier 9</td>
       <td>69</td>
-      <td>63</td>
+      <td>62</td>
     </tr>
     <tr>
       <td>Jameson Williams</td>
       <td>51</td>
       <td>Tier 9</td>
       <td>61</td>
-      <td>57</td>
+      <td>59</td>
     </tr>
     <tr>
       <td>Parker Washington</td>
       <td>52</td>
       <td>Tier 9</td>
       <td>72</td>
-      <td>72</td>
+      <td>68</td>
     </tr>
     <tr>
       <td>Christian Watson</td>
       <td>53</td>
       <td>Tier 9</td>
       <td>68</td>
-      <td>68</td>
+      <td>65</td>
     </tr>
     <tr>
       <td>Quinshon Judkins</td>
       <td>55</td>
       <td>Tier 9</td>
       <td>51</td>
-      <td>48</td>
+      <td>49</td>
     </tr>
     <tr>
       <td>Joe Burrow</td>
       <td>56</td>
       <td>Tier 9</td>
       <td>63</td>
-      <td>54</td>
+      <td>56</td>
     </tr>
     <tr>
       <td>Jayden Daniels</td>
       <td>57</td>
       <td>Tier 9</td>
       <td>71</td>
-      <td>66</td>
+      <td>64</td>
     </tr>
   </tbody>
 </table>
@@ -801,7 +801,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>49</td>
       <td>Tier 9</td>
       <td>62</td>
-      <td>60</td>
+      <td>58</td>
     </tr>
     <tr>
       <td>Quinshon Judkins</td>
@@ -809,7 +809,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>55</td>
       <td>Tier 9</td>
       <td>51</td>
-      <td>48</td>
+      <td>49</td>
     </tr>
   </tbody>
 </table>
@@ -843,8 +843,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>9</td>
       <td><strong style="color: #1f77b4;">9</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>47</td>
-      <td><strong style="color: #1f77b4;">7</strong></td>
+      <td>44</td>
+      <td><strong style="color: #1f77b4;">10</strong></td>
     </tr>
   </tbody>
 </table>
@@ -867,7 +867,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>43</td>
       <td>Tier 8</td>
       <td>58</td>
-      <td>50</td>
+      <td>51</td>
     </tr>
   </tbody>
 </table>
@@ -925,28 +925,28 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>50</td>
       <td>Tier 9</td>
       <td>69</td>
-      <td>63</td>
+      <td>62</td>
     </tr>
     <tr>
       <td>Parker Washington</td>
       <td>52</td>
       <td>Tier 9</td>
       <td>72</td>
-      <td>72</td>
+      <td>68</td>
     </tr>
     <tr>
       <td>Christian Watson</td>
       <td>53</td>
       <td>Tier 9</td>
       <td>68</td>
-      <td>68</td>
+      <td>65</td>
     </tr>
     <tr>
       <td>Jayden Daniels</td>
       <td>57</td>
       <td>Tier 9</td>
       <td>71</td>
-      <td>66</td>
+      <td>64</td>
     </tr>
   </tbody>
 </table>
@@ -973,7 +973,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>50</td>
       <td>Tier 9</td>
       <td>69</td>
-      <td>63</td>
+      <td>62</td>
     </tr>
     <tr>
       <td>Parker Washington</td>
@@ -981,7 +981,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>52</td>
       <td>Tier 9</td>
       <td>72</td>
-      <td>72</td>
+      <td>68</td>
     </tr>
     <tr>
       <td>Christian Watson</td>
@@ -989,7 +989,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>53</td>
       <td>Tier 9</td>
       <td>68</td>
-      <td>68</td>
+      <td>65</td>
     </tr>
   </tbody>
 </table>
@@ -1023,8 +1023,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>10</td>
       <td><strong style="color: #1f77b4;">10</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>76</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>74</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1047,14 +1047,14 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>65</td>
       <td>Tier 9</td>
       <td>81</td>
-      <td>75</td>
+      <td>79</td>
     </tr>
     <tr>
       <td>Marvin Harrison Jr.</td>
       <td>66</td>
       <td>Tier 10</td>
       <td>79</td>
-      <td>73</td>
+      <td>71</td>
     </tr>
   </tbody>
 </table>
@@ -1088,8 +1088,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>12</td>
       <td><strong style="color: #1f77b4;">15</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>98</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>86</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1112,14 +1112,14 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Alec Pierce</td>
       <td>75</td>
       <td>Tier 12</td>
       <td>96</td>
-      <td>96</td>
+      <td>92</td>
     </tr>
   </tbody>
 </table>
@@ -1153,8 +1153,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>13</td>
       <td>—</td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>90</td>
-      <td><strong style="color: #1f77b4;">12</strong></td>
+      <td>97</td>
+      <td><strong style="color: #1f77b4;">5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1177,56 +1177,56 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>MarShawn Lloyd</td>
       <td>83</td>
       <td>Tier 13</td>
       <td>110</td>
-      <td>159</td>
+      <td>144</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1240,28 +1240,28 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>92</td>
       <td>Tier 13</td>
       <td>103</td>
-      <td>84</td>
+      <td>80</td>
     </tr>
     <tr>
       <td>Brock Purdy</td>
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>KC Concepcion</td>
       <td>100</td>
       <td>Tier 13</td>
       <td>111</td>
-      <td>113</td>
+      <td>121</td>
     </tr>
   </tbody>
 </table>
@@ -1295,8 +1295,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>15</td>
       <td><strong style="color: #ff7f0e;">-27</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>128</td>
-      <td><strong style="color: #ff7f0e;">-13</strong></td>
+      <td>126</td>
+      <td><strong style="color: #ff7f0e;">-11</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1319,14 +1319,14 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1340,112 +1340,112 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Dallas Goedert</td>
       <td>105</td>
       <td>Tier 14</td>
       <td>134</td>
-      <td>126</td>
+      <td>118</td>
     </tr>
     <tr>
       <td>Jaxson Dart</td>
       <td>107</td>
       <td>Tier 14</td>
       <td>120</td>
-      <td>103</td>
+      <td>95</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Jalen Coker</td>
       <td>117</td>
       <td>Tier 14</td>
       <td>119</td>
-      <td>144</td>
+      <td>142</td>
     </tr>
     <tr>
       <td>Mike Washington</td>
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Rachaad White</td>
       <td>121</td>
       <td>Tier 14</td>
       <td>116</td>
-      <td>119</td>
+      <td>117</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Rashid Shaheed</td>
       <td>131</td>
       <td>Tier 15</td>
       <td>123</td>
-      <td>147</td>
+      <td>136</td>
     </tr>
     <tr>
       <td>Ja'kobi Lane</td>
       <td>132</td>
       <td>Tier 15</td>
       <td>143</td>
-      <td>161</td>
+      <td>145</td>
     </tr>
     <tr>
       <td>Keaton Mitchell</td>
       <td>134</td>
       <td>Tier 15</td>
       <td>138</td>
-      <td>164</td>
+      <td>152</td>
     </tr>
   </tbody>
 </table>
@@ -1472,7 +1472,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
@@ -1480,7 +1480,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
@@ -1488,7 +1488,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Jalen Coker</td>
@@ -1496,7 +1496,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>117</td>
       <td>Tier 14</td>
       <td>119</td>
-      <td>144</td>
+      <td>142</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
@@ -1504,7 +1504,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
@@ -1512,7 +1512,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Rashid Shaheed</td>
@@ -1520,7 +1520,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>131</td>
       <td>Tier 15</td>
       <td>123</td>
-      <td>147</td>
+      <td>136</td>
     </tr>
     <tr>
       <td>Ja'kobi Lane</td>
@@ -1528,7 +1528,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>132</td>
       <td>Tier 15</td>
       <td>143</td>
-      <td>161</td>
+      <td>145</td>
     </tr>
   </tbody>
 </table>
@@ -1562,8 +1562,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>62</td>
-      <td><strong style="color: #1f77b4;">64</strong></td>
+      <td>127</td>
+      <td><strong style="color: #ff7f0e;">-1</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1586,7 +1586,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1600,63 +1600,63 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Dallas Goedert</td>
       <td>105</td>
       <td>Tier 14</td>
       <td>134</td>
-      <td>126</td>
+      <td>118</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Mike Washington</td>
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
   </tbody>
 </table>
@@ -1690,8 +1690,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>16</td>
       <td><strong style="color: #ff7f0e;">-23</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>141</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>137</td>
+      <td><strong style="color: #1f77b4;">2</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1714,84 +1714,84 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Mike Washington</td>
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Ja'kobi Lane</td>
       <td>132</td>
       <td>Tier 15</td>
       <td>143</td>
-      <td>161</td>
+      <td>145</td>
     </tr>
     <tr>
       <td>Deebo Samuel Sr.</td>
       <td>144</td>
       <td>Tier 15</td>
       <td>152</td>
-      <td>131</td>
+      <td>129</td>
     </tr>
     <tr>
       <td>Tyler Allgeier</td>
       <td>154</td>
       <td>Tier 16</td>
       <td>142</td>
-      <td>132</td>
+      <td>133</td>
     </tr>
     <tr>
       <td>Mark Andrews</td>
       <td>159</td>
       <td>Tier 16</td>
       <td>144</td>
-      <td>122</td>
+      <td>120</td>
     </tr>
     <tr>
       <td>Hunter Henry</td>
       <td>161</td>
       <td>Tier 16</td>
       <td>154</td>
-      <td>149</td>
+      <td>143</td>
     </tr>
   </tbody>
 </table>
@@ -1818,7 +1818,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Tyler Allgeier</td>
@@ -1826,7 +1826,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>154</td>
       <td>Tier 16</td>
       <td>142</td>
-      <td>132</td>
+      <td>133</td>
     </tr>
   </tbody>
 </table>
@@ -1860,8 +1860,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>138</td>
-      <td><strong style="color: #1f77b4;">12</strong></td>
+      <td>204</td>
+      <td><strong style="color: #ff7f0e;">-54</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1884,42 +1884,42 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Deebo Samuel Sr.</td>
       <td>144</td>
       <td>Tier 15</td>
       <td>152</td>
-      <td>131</td>
+      <td>129</td>
     </tr>
   </tbody>
 </table>
@@ -1953,8 +1953,8 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>19</td>
       <td><strong style="color: #ff7f0e;">-32</strong></td>
       <td><strong style="color: #ff7f0e;">-5</strong></td>
-      <td>189</td>
-      <td><strong style="color: #ff7f0e;">-26</strong></td>
+      <td>165</td>
+      <td><strong style="color: #ff7f0e;">-2</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1977,7 +1977,7 @@ Of the 14 players drafted by Garrett, 2 picks were not rated by Mason.
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
   </tbody>
 </table>

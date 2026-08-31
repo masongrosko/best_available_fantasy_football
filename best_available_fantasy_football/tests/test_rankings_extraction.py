@@ -9,6 +9,7 @@ import pandas as pd
 
 from best_available_fantasy_football.rankings_extraction import (
     BDGEDraftOrderExtractor,
+    DraftSharksEmbeddedADPExtractor,
     ManualDraftOrderExtractor,
     SleeperDraftOrderExtractor,
 )
@@ -87,6 +88,57 @@ class TestSleeperDraftOrderExtractor(unittest.TestCase):
         self.assertEqual(output.loc[0, "sleeper_team_name"], "Changing Team Name")
         self.assertEqual(output.loc[0, "pick"], "Test Player")
         self.assertEqual(output.loc[0, "pick_number"], 1)
+
+
+class TestDraftSharksEmbeddedADPExtractor(unittest.TestCase):
+    """The embedded extractor should select consensus rather than Sleeper ADP."""
+
+    def test_extracts_consensus_source(self):
+        data = {
+            "selected": {
+                "type": "",
+                "superflex": 0,
+                "scoring": "half-ppr",
+                "size": 12,
+            },
+            "availability": [
+                {
+                    "key": "consensus",
+                    "type": "",
+                    "superflex": 0,
+                    "scoring": "half-ppr",
+                    "source": "consensus",
+                    "size": 12,
+                },
+                {
+                    "key": "sleeper",
+                    "type": "",
+                    "superflex": 0,
+                    "scoring": "half-ppr",
+                    "source": "sleeper",
+                    "size": 12,
+                },
+            ],
+            "seed": {
+                "players": {
+                    "1": {"fn": "Josh", "ln": "Allen", "fp": "QB"}
+                },
+                "adpSets": {
+                    "consensus": [{"id": 1, "pick": 23}],
+                    "sleeper": [{"id": 1, "pick": 20}],
+                },
+            },
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "adp.html"
+            page.write_text(
+                f"<script>var vueAppData = {json.dumps(data)};</script>",
+                encoding="utf-8",
+            )
+            output = DraftSharksEmbeddedADPExtractor().extract_draft_order(page)
+
+        self.assertEqual(output.loc[0, "player_name"], "Josh Allen")
+        self.assertEqual(output.loc[0, "adp"], 23)
 
 
 if __name__ == "__main__":

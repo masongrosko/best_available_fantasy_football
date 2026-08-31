@@ -19,8 +19,7 @@ from best_available_fantasy_football.draft_rating import (
     create_comparison,
 )
 from best_available_fantasy_football.rankings_extraction import (
-    DraftSharksStraightRead,
-    # DraftSharksEmbeddedADPExtractor,
+    DraftSharksEmbeddedADPExtractor,
     SleeperDraftOrderExtractor,
 )
 
@@ -63,10 +62,12 @@ def prepare_draft(picks: Path, users: Path) -> pd.DataFrame:
 
 def prepare_adp(path: Path) -> pd.DataFrame:
     """Adapt the current DraftSharks page to the historical ADP schema."""
-    # adp = DraftSharksEmbeddedADPExtractor().extract_draft_order(path)
-    adp = DraftSharksStraightRead().extract_draft_order(path)
+    adp = DraftSharksEmbeddedADPExtractor().extract_draft_order(path)
+    # DraftSharks also embeds aggregate team-QB and team-kicker rows whose names
+    # collide with defenses (for example, three "Baltimore Ravens" records).
+    adp = adp[adp["player_position"].isin({"QB", "RB", "WR", "TE", "K", "DEF"})]
     adp["clean_name"] = _clean_player_name_col(adp["player_name"])
-    return adp.drop_duplicates("clean_name", keep="first")
+    return adp.drop_duplicates(["clean_name", "player_position"], keep="first")
 
 
 def save_inputs(rankings_path: Path, draft: pd.DataFrame) -> None:

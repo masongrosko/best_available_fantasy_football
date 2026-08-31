@@ -11,7 +11,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![rating_of_Riley_viz](../images/90e32b37-e965-4d7d-a741-10634c49a76f.png)
+![rating_of_Riley_viz](../images/471a1c71-ea1a-4b69-8978-ba797ef4d044.png)
 
 ### Full draft table {#full-draft-table-riley}
 
@@ -51,8 +51,8 @@ C
       <td>6</td>
       <td><strong style="color: #1f77b4;">2</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>23</td>
-      <td><strong style="color: #ff7f0e;">-1</strong></td>
+      <td>22</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>3</td>
@@ -73,8 +73,8 @@ C
       <td>8</td>
       <td><strong style="color: #1f77b4;">5</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>36</td>
-      <td><strong style="color: #1f77b4;">10</strong></td>
+      <td>37</td>
+      <td><strong style="color: #1f77b4;">9</strong></td>
     </tr>
     <tr>
       <td>5</td>
@@ -84,8 +84,8 @@ C
       <td>9</td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>48</td>
-      <td><strong style="color: #1f77b4;">3</strong></td>
+      <td>49</td>
+      <td><strong style="color: #1f77b4;">2</strong></td>
     </tr>
     <tr>
       <td>6</td>
@@ -95,8 +95,8 @@ C
       <td>9</td>
       <td><strong style="color: #1f77b4;">6</strong></td>
       <td>—</td>
-      <td>62</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>63</td>
+      <td><strong style="color: #1f77b4;">7</strong></td>
     </tr>
     <tr>
       <td>7</td>
@@ -106,8 +106,8 @@ C
       <td>13</td>
       <td><strong style="color: #ff7f0e;">-26</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>70</td>
-      <td><strong style="color: #1f77b4;">5</strong></td>
+      <td>75</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>8</td>
@@ -117,8 +117,8 @@ C
       <td>14</td>
       <td><strong style="color: #ff7f0e;">-19</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>92</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>88</td>
+      <td><strong style="color: #1f77b4;">6</strong></td>
     </tr>
     <tr>
       <td>9</td>
@@ -128,8 +128,8 @@ C
       <td>13</td>
       <td><strong style="color: #1f77b4;">3</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>102</td>
-      <td><strong style="color: #ff7f0e;">-3</strong></td>
+      <td>104</td>
+      <td><strong style="color: #ff7f0e;">-5</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -139,8 +139,8 @@ C
       <td>18</td>
       <td><strong style="color: #ff7f0e;">-59</strong></td>
       <td><strong style="color: #ff7f0e;">-6</strong></td>
-      <td>133</td>
-      <td><strong style="color: #ff7f0e;">-15</strong></td>
+      <td>140</td>
+      <td><strong style="color: #ff7f0e;">-22</strong></td>
     </tr>
     <tr>
       <td>11</td>
@@ -150,8 +150,8 @@ C
       <td>15</td>
       <td><strong style="color: #ff7f0e;">-8</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>147</td>
-      <td><strong style="color: #ff7f0e;">-24</strong></td>
+      <td>136</td>
+      <td><strong style="color: #ff7f0e;">-13</strong></td>
     </tr>
     <tr>
       <td>12</td>
@@ -161,8 +161,8 @@ C
       <td>16</td>
       <td><strong style="color: #ff7f0e;">-12</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>132</td>
-      <td><strong style="color: #1f77b4;">10</strong></td>
+      <td>133</td>
+      <td><strong style="color: #1f77b4;">9</strong></td>
     </tr>
     <tr>
       <td>13</td>
@@ -172,8 +172,8 @@ C
       <td></td>
       <td></td>
       <td></td>
-      <td>51</td>
-      <td><strong style="color: #1f77b4;">96</strong></td>
+      <td>146</td>
+      <td><strong style="color: #1f77b4;">1</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -183,8 +183,8 @@ C
       <td></td>
       <td></td>
       <td></td>
-      <td>173</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>252</td>
+      <td><strong style="color: #ff7f0e;">-86</strong></td>
     </tr>
     <tr>
       <td></td>
@@ -195,7 +195,7 @@ C
       <td><strong style="color: #ff7f0e;">-125</strong></td>
       <td></td>
       <td></td>
-      <td><strong style="color: #1f77b4;">82</strong></td>
+      <td><strong style="color: #ff7f0e;">-94</strong></td>
     </tr>
   </tbody>
 </table>
@@ -239,8 +239,8 @@ Of the 14 players drafted by Riley, 3 picks were picked more than a full round e
       <td>13</td>
       <td><strong style="color: #ff7f0e;">-26</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>70</td>
-      <td><strong style="color: #1f77b4;">5</strong></td>
+      <td>75</td>
+      <td>—</td>
     </tr>
     <tr>
       <td>8</td>
@@ -250,8 +250,8 @@ Of the 14 players drafted by Riley, 3 picks were picked more than a full round e
       <td>14</td>
       <td><strong style="color: #ff7f0e;">-19</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>92</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>88</td>
+      <td><strong style="color: #1f77b4;">6</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -261,8 +261,8 @@ Of the 14 players drafted by Riley, 3 picks were picked more than a full round e
       <td>18</td>
       <td><strong style="color: #ff7f0e;">-59</strong></td>
       <td><strong style="color: #ff7f0e;">-6</strong></td>
-      <td>133</td>
-      <td><strong style="color: #ff7f0e;">-15</strong></td>
+      <td>140</td>
+      <td><strong style="color: #ff7f0e;">-22</strong></td>
     </tr>
   </tbody>
 </table>
@@ -298,8 +298,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>51</td>
-      <td><strong style="color: #1f77b4;">96</strong></td>
+      <td>146</td>
+      <td><strong style="color: #1f77b4;">1</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -309,8 +309,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>173</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>252</td>
+      <td><strong style="color: #ff7f0e;">-86</strong></td>
     </tr>
   </tbody>
 </table>
@@ -411,8 +411,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>6</td>
       <td><strong style="color: #1f77b4;">2</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>23</td>
-      <td><strong style="color: #ff7f0e;">-1</strong></td>
+      <td>22</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>
@@ -435,14 +435,14 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>16</td>
       <td>Tier 5</td>
       <td>25</td>
-      <td>21</td>
+      <td>20</td>
     </tr>
     <tr>
       <td>Malik Nabers</td>
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>
@@ -469,7 +469,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>16</td>
       <td>Tier 5</td>
       <td>25</td>
-      <td>21</td>
+      <td>20</td>
     </tr>
     <tr>
       <td>Malik Nabers</td>
@@ -477,7 +477,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>
@@ -535,35 +535,35 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>18</td>
       <td>Tier 5</td>
       <td>34</td>
-      <td>29</td>
+      <td>28</td>
     </tr>
     <tr>
       <td>Chris Olave</td>
       <td>24</td>
       <td>Tier 6</td>
       <td>32</td>
-      <td>31</td>
+      <td>29</td>
     </tr>
     <tr>
       <td>DeVonta Smith</td>
       <td>26</td>
       <td>Tier 6</td>
       <td>31</td>
-      <td>35</td>
+      <td>31</td>
     </tr>
     <tr>
       <td>Trey McBride</td>
       <td>29</td>
       <td>Tier 7</td>
       <td>30</td>
-      <td>24</td>
+      <td>25</td>
     </tr>
     <tr>
       <td>Tee Higgins</td>
       <td>30</td>
       <td>Tier 7</td>
       <td>38</td>
-      <td>38</td>
+      <td>35</td>
     </tr>
     <tr>
       <td>Emeka Egbuka</td>
@@ -577,7 +577,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>32</td>
       <td>Tier 7</td>
       <td>36</td>
-      <td>41</td>
+      <td>36</td>
     </tr>
     <tr>
       <td>Ladd McConkey</td>
@@ -591,7 +591,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>34</td>
       <td>Tier 7</td>
       <td>29</td>
-      <td>33</td>
+      <td>32</td>
     </tr>
     <tr>
       <td>Travis Etienne Jr.</td>
@@ -605,14 +605,14 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>36</td>
       <td>Tier 7</td>
       <td>33</td>
-      <td>32</td>
+      <td>33</td>
     </tr>
     <tr>
       <td>Garrett Wilson</td>
       <td>37</td>
       <td>Tier 7</td>
       <td>37</td>
-      <td>44</td>
+      <td>45</td>
     </tr>
   </tbody>
 </table>
@@ -639,7 +639,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>34</td>
       <td>Tier 7</td>
       <td>29</td>
-      <td>33</td>
+      <td>32</td>
     </tr>
     <tr>
       <td>Travis Etienne Jr.</td>
@@ -655,7 +655,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>36</td>
       <td>Tier 7</td>
       <td>33</td>
-      <td>32</td>
+      <td>33</td>
     </tr>
   </tbody>
 </table>
@@ -689,8 +689,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>8</td>
       <td><strong style="color: #1f77b4;">5</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>36</td>
-      <td><strong style="color: #1f77b4;">10</strong></td>
+      <td>37</td>
+      <td><strong style="color: #1f77b4;">9</strong></td>
     </tr>
   </tbody>
 </table>
@@ -774,8 +774,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>9</td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>48</td>
-      <td><strong style="color: #1f77b4;">3</strong></td>
+      <td>49</td>
+      <td><strong style="color: #1f77b4;">2</strong></td>
     </tr>
   </tbody>
 </table>
@@ -798,70 +798,70 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>43</td>
       <td>Tier 8</td>
       <td>58</td>
-      <td>50</td>
+      <td>51</td>
     </tr>
     <tr>
       <td>Jaylen Waddle</td>
       <td>45</td>
       <td>Tier 9</td>
       <td>54</td>
-      <td>47</td>
+      <td>44</td>
     </tr>
     <tr>
       <td>Luther Burden III</td>
       <td>46</td>
       <td>Tier 9</td>
       <td>59</td>
-      <td>59</td>
+      <td>55</td>
     </tr>
     <tr>
       <td>Davante Adams</td>
       <td>47</td>
       <td>Tier 9</td>
       <td>56</td>
-      <td>56</td>
+      <td>53</td>
     </tr>
     <tr>
       <td>D.J. Moore</td>
       <td>48</td>
       <td>Tier 9</td>
       <td>57</td>
-      <td>55</td>
+      <td>54</td>
     </tr>
     <tr>
       <td>Bhayshul Tuten</td>
       <td>49</td>
       <td>Tier 9</td>
       <td>62</td>
-      <td>60</td>
+      <td>58</td>
     </tr>
     <tr>
       <td>Rome Odunze</td>
       <td>50</td>
       <td>Tier 9</td>
       <td>69</td>
-      <td>63</td>
+      <td>62</td>
     </tr>
     <tr>
       <td>Jameson Williams</td>
       <td>51</td>
       <td>Tier 9</td>
       <td>61</td>
-      <td>57</td>
+      <td>59</td>
     </tr>
     <tr>
       <td>Parker Washington</td>
       <td>52</td>
       <td>Tier 9</td>
       <td>72</td>
-      <td>72</td>
+      <td>68</td>
     </tr>
     <tr>
       <td>Christian Watson</td>
       <td>53</td>
       <td>Tier 9</td>
       <td>68</td>
-      <td>68</td>
+      <td>65</td>
     </tr>
   </tbody>
 </table>
@@ -888,7 +888,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>49</td>
       <td>Tier 9</td>
       <td>62</td>
-      <td>60</td>
+      <td>58</td>
     </tr>
   </tbody>
 </table>
@@ -922,8 +922,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>9</td>
       <td><strong style="color: #1f77b4;">6</strong></td>
       <td>—</td>
-      <td>62</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>63</td>
+      <td><strong style="color: #1f77b4;">7</strong></td>
     </tr>
   </tbody>
 </table>
@@ -946,14 +946,14 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>52</td>
       <td>Tier 9</td>
       <td>72</td>
-      <td>72</td>
+      <td>68</td>
     </tr>
     <tr>
       <td>Jayden Daniels</td>
       <td>57</td>
       <td>Tier 9</td>
       <td>71</td>
-      <td>66</td>
+      <td>64</td>
     </tr>
   </tbody>
 </table>
@@ -980,7 +980,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>57</td>
       <td>Tier 9</td>
       <td>71</td>
-      <td>66</td>
+      <td>64</td>
     </tr>
   </tbody>
 </table>
@@ -1014,8 +1014,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>13</td>
       <td><strong style="color: #ff7f0e;">-26</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>70</td>
-      <td><strong style="color: #1f77b4;">5</strong></td>
+      <td>75</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>
@@ -1038,147 +1038,147 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>65</td>
       <td>Tier 9</td>
       <td>81</td>
-      <td>75</td>
+      <td>79</td>
     </tr>
     <tr>
       <td>Marvin Harrison Jr.</td>
       <td>66</td>
       <td>Tier 10</td>
       <td>79</td>
-      <td>73</td>
+      <td>71</td>
     </tr>
     <tr>
       <td>Rhamondre Stevenson</td>
       <td>68</td>
       <td>Tier 10</td>
       <td>78</td>
-      <td>76</td>
+      <td>74</td>
     </tr>
     <tr>
       <td>Michael Wilson</td>
       <td>70</td>
       <td>Tier 10</td>
       <td>86</td>
-      <td>89</td>
+      <td>90</td>
     </tr>
     <tr>
       <td>J.K. Dobbins</td>
       <td>72</td>
       <td>Tier 10</td>
       <td>83</td>
-      <td>85</td>
+      <td>87</td>
     </tr>
     <tr>
       <td>Michael Pittman Jr.</td>
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Alec Pierce</td>
       <td>75</td>
       <td>Tier 12</td>
       <td>96</td>
-      <td>96</td>
+      <td>92</td>
     </tr>
     <tr>
       <td>Trevor Lawrence</td>
       <td>76</td>
       <td>Tier 12</td>
       <td>91</td>
-      <td>98</td>
+      <td>86</td>
     </tr>
     <tr>
       <td>Justin Herbert</td>
       <td>78</td>
       <td>Tier 12</td>
       <td>77</td>
-      <td>80</td>
+      <td>76</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>DK Metcalf</td>
       <td>81</td>
       <td>Tier 13</td>
       <td>80</td>
-      <td>77</td>
+      <td>78</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>MarShawn Lloyd</td>
       <td>83</td>
       <td>Tier 13</td>
       <td>110</td>
-      <td>159</td>
+      <td>144</td>
     </tr>
     <tr>
       <td>Tony Pollard</td>
       <td>84</td>
       <td>Tier 13</td>
       <td>88</td>
-      <td>79</td>
+      <td>77</td>
     </tr>
     <tr>
       <td>Jonathon Brooks</td>
       <td>85</td>
       <td>Tier 13</td>
       <td>84</td>
-      <td>88</td>
+      <td>83</td>
     </tr>
     <tr>
       <td>Brian Thomas Jr.</td>
       <td>86</td>
       <td>Tier 13</td>
       <td>82</td>
-      <td>71</td>
+      <td>72</td>
     </tr>
     <tr>
       <td>Courtland Sutton</td>
       <td>87</td>
       <td>Tier 13</td>
       <td>89</td>
-      <td>82</td>
+      <td>84</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1192,49 +1192,49 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>92</td>
       <td>Tier 13</td>
       <td>103</td>
-      <td>84</td>
+      <td>80</td>
     </tr>
     <tr>
       <td>Brock Purdy</td>
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>Jayden Reed</td>
       <td>96</td>
       <td>Tier 13</td>
       <td>99</td>
-      <td>102</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>Makai Lemon</td>
       <td>97</td>
       <td>Tier 13</td>
       <td>101</td>
-      <td>87</td>
+      <td>93</td>
     </tr>
     <tr>
       <td>Jordan Mason</td>
       <td>99</td>
       <td>Tier 13</td>
       <td>98</td>
-      <td>99</td>
+      <td>102</td>
     </tr>
     <tr>
       <td>KC Concepcion</td>
       <td>100</td>
       <td>Tier 13</td>
       <td>111</td>
-      <td>113</td>
+      <td>121</td>
     </tr>
   </tbody>
 </table>
@@ -1261,7 +1261,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>65</td>
       <td>Tier 9</td>
       <td>81</td>
-      <td>75</td>
+      <td>79</td>
     </tr>
   </tbody>
 </table>
@@ -1295,8 +1295,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>14</td>
       <td><strong style="color: #ff7f0e;">-19</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>92</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>88</td>
+      <td><strong style="color: #1f77b4;">6</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1319,63 +1319,63 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Alec Pierce</td>
       <td>75</td>
       <td>Tier 12</td>
       <td>96</td>
-      <td>96</td>
+      <td>92</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>MarShawn Lloyd</td>
       <td>83</td>
       <td>Tier 13</td>
       <td>110</td>
-      <td>159</td>
+      <td>144</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1389,98 +1389,98 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>92</td>
       <td>Tier 13</td>
       <td>103</td>
-      <td>84</td>
+      <td>80</td>
     </tr>
     <tr>
       <td>Brock Purdy</td>
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>Jayden Reed</td>
       <td>96</td>
       <td>Tier 13</td>
       <td>99</td>
-      <td>102</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>Makai Lemon</td>
       <td>97</td>
       <td>Tier 13</td>
       <td>101</td>
-      <td>87</td>
+      <td>93</td>
     </tr>
     <tr>
       <td>Jordan Mason</td>
       <td>99</td>
       <td>Tier 13</td>
       <td>98</td>
-      <td>99</td>
+      <td>102</td>
     </tr>
     <tr>
       <td>KC Concepcion</td>
       <td>100</td>
       <td>Tier 13</td>
       <td>111</td>
-      <td>113</td>
+      <td>121</td>
     </tr>
     <tr>
       <td>Dalton Kincaid</td>
       <td>102</td>
       <td>Tier 13</td>
       <td>102</td>
-      <td>90</td>
+      <td>97</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Dallas Goedert</td>
       <td>105</td>
       <td>Tier 14</td>
       <td>134</td>
-      <td>126</td>
+      <td>118</td>
     </tr>
     <tr>
       <td>Jaxson Dart</td>
       <td>107</td>
       <td>Tier 14</td>
       <td>120</td>
-      <td>103</td>
+      <td>95</td>
     </tr>
     <tr>
       <td>Blake Corum</td>
       <td>109</td>
       <td>Tier 14</td>
       <td>104</td>
-      <td>93</td>
+      <td>91</td>
     </tr>
     <tr>
       <td>Jacory Croskey-Merritt</td>
       <td>111</td>
       <td>Tier 14</td>
       <td>112</td>
-      <td>97</td>
+      <td>100</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
   </tbody>
 </table>
@@ -1507,7 +1507,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Alec Pierce</td>
@@ -1515,7 +1515,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>75</td>
       <td>Tier 12</td>
       <td>96</td>
-      <td>96</td>
+      <td>92</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
@@ -1523,7 +1523,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
@@ -1531,7 +1531,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
@@ -1539,7 +1539,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
@@ -1547,7 +1547,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
@@ -1555,7 +1555,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
@@ -1563,7 +1563,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
     <tr>
       <td>Jayden Reed</td>
@@ -1571,7 +1571,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>96</td>
       <td>Tier 13</td>
       <td>99</td>
-      <td>102</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>Makai Lemon</td>
@@ -1579,7 +1579,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>97</td>
       <td>Tier 13</td>
       <td>101</td>
-      <td>87</td>
+      <td>93</td>
     </tr>
     <tr>
       <td>KC Concepcion</td>
@@ -1587,7 +1587,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>100</td>
       <td>Tier 13</td>
       <td>111</td>
-      <td>113</td>
+      <td>121</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
@@ -1595,7 +1595,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
   </tbody>
 </table>
@@ -1629,8 +1629,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>13</td>
       <td><strong style="color: #1f77b4;">3</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>102</td>
-      <td><strong style="color: #ff7f0e;">-3</strong></td>
+      <td>104</td>
+      <td><strong style="color: #ff7f0e;">-5</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1653,56 +1653,56 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>MarShawn Lloyd</td>
       <td>83</td>
       <td>Tier 13</td>
       <td>110</td>
-      <td>159</td>
+      <td>144</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1716,21 +1716,21 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>92</td>
       <td>Tier 13</td>
       <td>103</td>
-      <td>84</td>
+      <td>80</td>
     </tr>
     <tr>
       <td>Brock Purdy</td>
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
   </tbody>
 </table>
@@ -1757,7 +1757,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>73</td>
       <td>Tier 10</td>
       <td>107</td>
-      <td>105</td>
+      <td>110</td>
     </tr>
     <tr>
       <td>Josh Downs</td>
@@ -1765,7 +1765,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
@@ -1773,7 +1773,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Wan'Dale Robinson</td>
@@ -1781,7 +1781,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>82</td>
       <td>Tier 13</td>
       <td>109</td>
-      <td>117</td>
+      <td>125</td>
     </tr>
     <tr>
       <td>Matthew Golden</td>
@@ -1789,7 +1789,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>88</td>
       <td>Tier 13</td>
       <td>113</td>
-      <td>120</td>
+      <td>123</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
@@ -1797,7 +1797,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Quentin Johnston</td>
@@ -1805,7 +1805,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>90</td>
       <td>Tier 13</td>
       <td>105</td>
-      <td>104</td>
+      <td>99</td>
     </tr>
   </tbody>
 </table>
@@ -1839,8 +1839,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>18</td>
       <td><strong style="color: #ff7f0e;">-59</strong></td>
       <td><strong style="color: #ff7f0e;">-6</strong></td>
-      <td>133</td>
-      <td><strong style="color: #ff7f0e;">-15</strong></td>
+      <td>140</td>
+      <td><strong style="color: #ff7f0e;">-22</strong></td>
     </tr>
   </tbody>
 </table>
@@ -1863,14 +1863,14 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -1884,182 +1884,182 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Dallas Goedert</td>
       <td>105</td>
       <td>Tier 14</td>
       <td>134</td>
-      <td>126</td>
+      <td>118</td>
     </tr>
     <tr>
       <td>Jaxson Dart</td>
       <td>107</td>
       <td>Tier 14</td>
       <td>120</td>
-      <td>103</td>
+      <td>95</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Jalen Coker</td>
       <td>117</td>
       <td>Tier 14</td>
       <td>119</td>
-      <td>144</td>
+      <td>142</td>
     </tr>
     <tr>
       <td>Mike Washington</td>
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Rashid Shaheed</td>
       <td>131</td>
       <td>Tier 15</td>
       <td>123</td>
-      <td>147</td>
+      <td>136</td>
     </tr>
     <tr>
       <td>Ja'kobi Lane</td>
       <td>132</td>
       <td>Tier 15</td>
       <td>143</td>
-      <td>161</td>
+      <td>145</td>
     </tr>
     <tr>
       <td>Keaton Mitchell</td>
       <td>134</td>
       <td>Tier 15</td>
       <td>138</td>
-      <td>164</td>
+      <td>152</td>
     </tr>
     <tr>
       <td>Romeo Doubs</td>
       <td>143</td>
       <td>Tier 15</td>
       <td>135</td>
-      <td>129</td>
+      <td>132</td>
     </tr>
     <tr>
       <td>Deebo Samuel Sr.</td>
       <td>144</td>
       <td>Tier 15</td>
       <td>152</td>
-      <td>131</td>
+      <td>129</td>
     </tr>
     <tr>
       <td>Chris Rodriguez Jr.</td>
       <td>145</td>
       <td>Tier 15</td>
       <td>128</td>
-      <td>127</td>
+      <td>131</td>
     </tr>
     <tr>
       <td>Jonah Coleman</td>
       <td>153</td>
       <td>Tier 16</td>
       <td>133</td>
-      <td>143</td>
+      <td>138</td>
     </tr>
     <tr>
       <td>Tyler Allgeier</td>
       <td>154</td>
       <td>Tier 16</td>
       <td>142</td>
-      <td>132</td>
+      <td>133</td>
     </tr>
     <tr>
       <td>Jake Ferguson</td>
       <td>158</td>
       <td>Tier 16</td>
       <td>136</td>
-      <td>109</td>
+      <td>116</td>
     </tr>
     <tr>
       <td>Mark Andrews</td>
       <td>159</td>
       <td>Tier 16</td>
       <td>144</td>
-      <td>122</td>
+      <td>120</td>
     </tr>
     <tr>
       <td>Hunter Henry</td>
       <td>161</td>
       <td>Tier 16</td>
       <td>154</td>
-      <td>149</td>
+      <td>143</td>
     </tr>
     <tr>
       <td>Woody Marks</td>
       <td>162</td>
       <td>Tier 16</td>
       <td>139</td>
-      <td>141</td>
+      <td>137</td>
     </tr>
     <tr>
       <td>Khalil Shakir</td>
       <td>169</td>
       <td>Tier 18</td>
       <td>127</td>
-      <td>146</td>
+      <td>141</td>
     </tr>
     <tr>
       <td>Zach Charbonnet</td>
       <td>172</td>
       <td>Tier 18</td>
       <td>156</td>
-      <td>140</td>
+      <td>139</td>
     </tr>
   </tbody>
 </table>
@@ -2086,7 +2086,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Keaton Mitchell</td>
@@ -2094,7 +2094,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>134</td>
       <td>Tier 15</td>
       <td>138</td>
-      <td>164</td>
+      <td>152</td>
     </tr>
     <tr>
       <td>Chris Rodriguez Jr.</td>
@@ -2102,7 +2102,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>145</td>
       <td>Tier 15</td>
       <td>128</td>
-      <td>127</td>
+      <td>131</td>
     </tr>
     <tr>
       <td>Jonah Coleman</td>
@@ -2110,7 +2110,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>153</td>
       <td>Tier 16</td>
       <td>133</td>
-      <td>143</td>
+      <td>138</td>
     </tr>
     <tr>
       <td>Tyler Allgeier</td>
@@ -2118,7 +2118,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>154</td>
       <td>Tier 16</td>
       <td>142</td>
-      <td>132</td>
+      <td>133</td>
     </tr>
     <tr>
       <td>Woody Marks</td>
@@ -2126,7 +2126,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>162</td>
       <td>Tier 16</td>
       <td>139</td>
-      <td>141</td>
+      <td>137</td>
     </tr>
     <tr>
       <td>Zach Charbonnet</td>
@@ -2134,7 +2134,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>172</td>
       <td>Tier 18</td>
       <td>156</td>
-      <td>140</td>
+      <td>139</td>
     </tr>
   </tbody>
 </table>
@@ -2168,8 +2168,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>15</td>
       <td><strong style="color: #ff7f0e;">-8</strong></td>
       <td><strong style="color: #ff7f0e;">-3</strong></td>
-      <td>147</td>
-      <td><strong style="color: #ff7f0e;">-24</strong></td>
+      <td>136</td>
+      <td><strong style="color: #ff7f0e;">-13</strong></td>
     </tr>
   </tbody>
 </table>
@@ -2192,14 +2192,14 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Matthew Stafford</td>
@@ -2213,70 +2213,70 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>94</td>
       <td>Tier 13</td>
       <td>131</td>
-      <td>123</td>
+      <td>112</td>
     </tr>
     <tr>
       <td>Bo Nix</td>
       <td>95</td>
       <td>Tier 13</td>
       <td>124</td>
-      <td>118</td>
+      <td>109</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Dallas Goedert</td>
       <td>105</td>
       <td>Tier 14</td>
       <td>134</td>
-      <td>126</td>
+      <td>118</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Mike Washington</td>
       <td>118</td>
       <td>Tier 14</td>
       <td>140</td>
-      <td>158</td>
+      <td>134</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
   </tbody>
 </table>
@@ -2303,7 +2303,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>De'Zhaun Stribling</td>
@@ -2311,7 +2311,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>89</td>
       <td>Tier 13</td>
       <td>125</td>
-      <td>121</td>
+      <td>114</td>
     </tr>
     <tr>
       <td>Jordyn Tyson</td>
@@ -2319,7 +2319,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>103</td>
       <td>Tier 13</td>
       <td>132</td>
-      <td>95</td>
+      <td>94</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
@@ -2327,7 +2327,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
@@ -2335,7 +2335,7 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
   </tbody>
 </table>
@@ -2369,8 +2369,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>16</td>
       <td><strong style="color: #ff7f0e;">-12</strong></td>
       <td><strong style="color: #ff7f0e;">-4</strong></td>
-      <td>132</td>
-      <td><strong style="color: #1f77b4;">10</strong></td>
+      <td>133</td>
+      <td><strong style="color: #1f77b4;">9</strong></td>
     </tr>
   </tbody>
 </table>
@@ -2393,56 +2393,56 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
     <tr>
       <td>Jared Goff</td>
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Ja'kobi Lane</td>
       <td>132</td>
       <td>Tier 15</td>
       <td>143</td>
-      <td>161</td>
+      <td>145</td>
     </tr>
     <tr>
       <td>Deebo Samuel Sr.</td>
       <td>144</td>
       <td>Tier 15</td>
       <td>152</td>
-      <td>131</td>
+      <td>129</td>
     </tr>
   </tbody>
 </table>
@@ -2476,8 +2476,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>51</td>
-      <td><strong style="color: #1f77b4;">96</strong></td>
+      <td>146</td>
+      <td><strong style="color: #1f77b4;">1</strong></td>
     </tr>
   </tbody>
 </table>
@@ -2500,42 +2500,42 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
     <tr>
       <td>Adonai Mitchell</td>
       <td>122</td>
       <td>Tier 14</td>
       <td>155</td>
-      <td>230</td>
+      <td>212</td>
     </tr>
     <tr>
       <td>Denzel Boston</td>
       <td>123</td>
       <td>Tier 14</td>
       <td>159</td>
-      <td>157</td>
+      <td>154</td>
     </tr>
     <tr>
       <td>Kyler Murray</td>
       <td>124</td>
       <td>Tier 14</td>
       <td>161</td>
-      <td>145</td>
+      <td>124</td>
     </tr>
     <tr>
       <td>Juwan Johnson</td>
       <td>125</td>
       <td>Tier 14</td>
       <td>165</td>
-      <td>183</td>
+      <td>150</td>
     </tr>
     <tr>
       <td>Deebo Samuel Sr.</td>
       <td>144</td>
       <td>Tier 15</td>
       <td>152</td>
-      <td>131</td>
+      <td>129</td>
     </tr>
   </tbody>
 </table>
@@ -2569,8 +2569,8 @@ Of the 14 players drafted by Riley, 2 picks were not rated by Mason.
       <td></td>
       <td></td>
       <td></td>
-      <td>173</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>252</td>
+      <td><strong style="color: #ff7f0e;">-86</strong></td>
     </tr>
   </tbody>
 </table>

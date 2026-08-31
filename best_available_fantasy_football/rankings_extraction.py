@@ -333,7 +333,7 @@ class DraftSharksADPDraftOrderExtractor(DraftOrderExtractor):
 
 
 class DraftSharksEmbeddedADPExtractor(DraftOrderExtractor):
-    """Extract the selected Sleeper ADP set embedded in a current ADP page."""
+    """Extract consensus ADP embedded in a current DraftSharks ADP page."""
 
     def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
         page = Path(file_path).read_text(encoding="utf-8-sig")
@@ -348,7 +348,7 @@ class DraftSharksEmbeddedADPExtractor(DraftOrderExtractor):
             if item["type"] == selected["type"]
             and int(item["superflex"]) == int(selected["superflex"])
             and item["scoring"] == selected["scoring"]
-            and item["source"] == "sleeper"
+            and item["source"] == "consensus"
             and int(item["size"]) == int(selected["size"])
         )
         players = data["seed"]["players"]
@@ -365,5 +365,7 @@ class DraftSharksEmbeddedADPExtractor(DraftOrderExtractor):
         return pd.DataFrame(rows)
 
 class DraftSharksStraightRead(DraftOrderExtractor):
+    """Read an ADP table that was exported to CSV."""
+
     def extract_draft_order(self, file_path: PathLike) -> pd.DataFrame:
         return pd.read_csv(file_path)

@@ -11,7 +11,7 @@ A+
 
 ![A+](/images/draft_grades/a_plus.png)
 
-![rating_of_Mason_viz](../images/00459a85-8fe4-4485-929c-5869b1b3c866.png)
+![rating_of_Mason_viz](../images/2da819cc-6c3c-46de-9c08-496105f00303.png)
 
 ### Full draft table {#full-draft-table-mason}
 
@@ -40,8 +40,8 @@ A+
       <td>5</td>
       <td>—</td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>18</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>17</td>
+      <td><strong style="color: #ff7f0e;">-6</strong></td>
     </tr>
     <tr>
       <td>2</td>
@@ -73,8 +73,8 @@ A+
       <td>7</td>
       <td><strong style="color: #1f77b4;">8</strong></td>
       <td>—</td>
-      <td>38</td>
-      <td>—</td>
+      <td>35</td>
+      <td><strong style="color: #1f77b4;">3</strong></td>
     </tr>
     <tr>
       <td>5</td>
@@ -84,8 +84,8 @@ A+
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>59</td>
-      <td>—</td>
+      <td>55</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
     <tr>
       <td>6</td>
@@ -95,8 +95,8 @@ A+
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>60</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>58</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
     <tr>
       <td>7</td>
@@ -106,8 +106,8 @@ A+
       <td>10</td>
       <td><strong style="color: #1f77b4;">11</strong></td>
       <td>—</td>
-      <td>85</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>87</td>
+      <td><strong style="color: #ff7f0e;">-4</strong></td>
     </tr>
     <tr>
       <td>8</td>
@@ -117,8 +117,8 @@ A+
       <td>10</td>
       <td><strong style="color: #1f77b4;">16</strong></td>
       <td>—</td>
-      <td>89</td>
-      <td><strong style="color: #ff7f0e;">-3</strong></td>
+      <td>90</td>
+      <td><strong style="color: #ff7f0e;">-4</strong></td>
     </tr>
     <tr>
       <td>9</td>
@@ -128,8 +128,8 @@ A+
       <td>10</td>
       <td><strong style="color: #1f77b4;">34</strong></td>
       <td>—</td>
-      <td>105</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>110</td>
+      <td><strong style="color: #ff7f0e;">-3</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -139,8 +139,8 @@ A+
       <td>13</td>
       <td><strong style="color: #1f77b4;">27</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>159</td>
-      <td><strong style="color: #ff7f0e;">-49</strong></td>
+      <td>144</td>
+      <td><strong style="color: #ff7f0e;">-34</strong></td>
     </tr>
     <tr>
       <td>11</td>
@@ -150,8 +150,8 @@ A+
       <td>13</td>
       <td><strong style="color: #1f77b4;">37</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>123</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>112</td>
+      <td><strong style="color: #1f77b4;">19</strong></td>
     </tr>
     <tr>
       <td>12</td>
@@ -161,8 +161,8 @@ A+
       <td>14</td>
       <td><strong style="color: #1f77b4;">29</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>126</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>118</td>
+      <td><strong style="color: #1f77b4;">16</strong></td>
     </tr>
     <tr>
       <td>13</td>
@@ -172,8 +172,8 @@ A+
       <td>14</td>
       <td><strong style="color: #1f77b4;">33</strong></td>
       <td>—</td>
-      <td>230</td>
-      <td><strong style="color: #ff7f0e;">-75</strong></td>
+      <td>212</td>
+      <td><strong style="color: #ff7f0e;">-57</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -183,8 +183,8 @@ A+
       <td>14</td>
       <td><strong style="color: #1f77b4;">46</strong></td>
       <td>—</td>
-      <td>139</td>
-      <td><strong style="color: #1f77b4;">19</strong></td>
+      <td>122</td>
+      <td><strong style="color: #1f77b4;">36</strong></td>
     </tr>
     <tr>
       <td></td>
@@ -195,7 +195,7 @@ A+
       <td><strong style="color: #1f77b4;">271</strong></td>
       <td></td>
       <td></td>
-      <td><strong style="color: #ff7f0e;">-100</strong></td>
+      <td><strong style="color: #ff7f0e;">-29</strong></td>
     </tr>
   </tbody>
 </table>
@@ -231,8 +231,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>59</td>
-      <td>—</td>
+      <td>55</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
     <tr>
       <td>6</td>
@@ -242,8 +242,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>60</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>58</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
     <tr>
       <td>8</td>
@@ -253,8 +253,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>10</td>
       <td><strong style="color: #1f77b4;">16</strong></td>
       <td>—</td>
-      <td>89</td>
-      <td><strong style="color: #ff7f0e;">-3</strong></td>
+      <td>90</td>
+      <td><strong style="color: #ff7f0e;">-4</strong></td>
     </tr>
     <tr>
       <td>9</td>
@@ -264,8 +264,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>10</td>
       <td><strong style="color: #1f77b4;">34</strong></td>
       <td>—</td>
-      <td>105</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>110</td>
+      <td><strong style="color: #ff7f0e;">-3</strong></td>
     </tr>
     <tr>
       <td>10</td>
@@ -275,8 +275,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>13</td>
       <td><strong style="color: #1f77b4;">27</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>159</td>
-      <td><strong style="color: #ff7f0e;">-49</strong></td>
+      <td>144</td>
+      <td><strong style="color: #ff7f0e;">-34</strong></td>
     </tr>
     <tr>
       <td>11</td>
@@ -286,8 +286,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>13</td>
       <td><strong style="color: #1f77b4;">37</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>123</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>112</td>
+      <td><strong style="color: #1f77b4;">19</strong></td>
     </tr>
     <tr>
       <td>12</td>
@@ -297,8 +297,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>14</td>
       <td><strong style="color: #1f77b4;">29</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>126</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>118</td>
+      <td><strong style="color: #1f77b4;">16</strong></td>
     </tr>
     <tr>
       <td>13</td>
@@ -308,8 +308,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>14</td>
       <td><strong style="color: #1f77b4;">33</strong></td>
       <td>—</td>
-      <td>230</td>
-      <td><strong style="color: #ff7f0e;">-75</strong></td>
+      <td>212</td>
+      <td><strong style="color: #ff7f0e;">-57</strong></td>
     </tr>
     <tr>
       <td>14</td>
@@ -319,8 +319,8 @@ Of the 14 players drafted by Mason, 9 picks were picked more than a full round l
       <td>14</td>
       <td><strong style="color: #1f77b4;">46</strong></td>
       <td>—</td>
-      <td>139</td>
-      <td><strong style="color: #1f77b4;">19</strong></td>
+      <td>122</td>
+      <td><strong style="color: #1f77b4;">36</strong></td>
     </tr>
   </tbody>
 </table>
@@ -372,8 +372,8 @@ No unrated picks
       <td>5</td>
       <td>—</td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>18</td>
-      <td><strong style="color: #ff7f0e;">-7</strong></td>
+      <td>17</td>
+      <td><strong style="color: #ff7f0e;">-6</strong></td>
     </tr>
   </tbody>
 </table>
@@ -489,7 +489,7 @@ This was the best pick available!
       <td>30</td>
       <td>Tier 7</td>
       <td>38</td>
-      <td>38</td>
+      <td>35</td>
     </tr>
     <tr>
       <td>Emeka Egbuka</td>
@@ -503,7 +503,7 @@ This was the best pick available!
       <td>32</td>
       <td>Tier 7</td>
       <td>36</td>
-      <td>41</td>
+      <td>36</td>
     </tr>
     <tr>
       <td>Ladd McConkey</td>
@@ -544,8 +544,8 @@ This was the best pick available!
       <td>7</td>
       <td><strong style="color: #1f77b4;">8</strong></td>
       <td>—</td>
-      <td>38</td>
-      <td>—</td>
+      <td>35</td>
+      <td><strong style="color: #1f77b4;">3</strong></td>
     </tr>
   </tbody>
 </table>
@@ -579,8 +579,8 @@ This was the best pick available!
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>59</td>
-      <td>—</td>
+      <td>55</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
   </tbody>
 </table>
@@ -614,8 +614,8 @@ This was the best pick available!
       <td>9</td>
       <td><strong style="color: #1f77b4;">13</strong></td>
       <td>—</td>
-      <td>60</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>58</td>
+      <td><strong style="color: #1f77b4;">4</strong></td>
     </tr>
   </tbody>
 </table>
@@ -649,8 +649,8 @@ This was the best pick available!
       <td>10</td>
       <td><strong style="color: #1f77b4;">11</strong></td>
       <td>—</td>
-      <td>85</td>
-      <td><strong style="color: #ff7f0e;">-2</strong></td>
+      <td>87</td>
+      <td><strong style="color: #ff7f0e;">-4</strong></td>
     </tr>
   </tbody>
 </table>
@@ -673,7 +673,7 @@ This was the best pick available!
       <td>70</td>
       <td>Tier 10</td>
       <td>86</td>
-      <td>89</td>
+      <td>90</td>
     </tr>
   </tbody>
 </table>
@@ -707,8 +707,8 @@ This was the best pick available!
       <td>10</td>
       <td><strong style="color: #1f77b4;">16</strong></td>
       <td>—</td>
-      <td>89</td>
-      <td><strong style="color: #ff7f0e;">-3</strong></td>
+      <td>90</td>
+      <td><strong style="color: #ff7f0e;">-4</strong></td>
     </tr>
   </tbody>
 </table>
@@ -742,8 +742,8 @@ This was the best pick available!
       <td>10</td>
       <td><strong style="color: #1f77b4;">34</strong></td>
       <td>—</td>
-      <td>105</td>
-      <td><strong style="color: #1f77b4;">2</strong></td>
+      <td>110</td>
+      <td><strong style="color: #ff7f0e;">-3</strong></td>
     </tr>
   </tbody>
 </table>
@@ -777,8 +777,8 @@ This was the best pick available!
       <td>13</td>
       <td><strong style="color: #1f77b4;">27</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>159</td>
-      <td><strong style="color: #ff7f0e;">-49</strong></td>
+      <td>144</td>
+      <td><strong style="color: #ff7f0e;">-34</strong></td>
     </tr>
   </tbody>
 </table>
@@ -801,14 +801,14 @@ This was the best pick available!
       <td>79</td>
       <td>Tier 12</td>
       <td>114</td>
-      <td>110</td>
+      <td>103</td>
     </tr>
     <tr>
       <td>Jakobi Meyers</td>
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
   </tbody>
 </table>
@@ -842,8 +842,8 @@ This was the best pick available!
       <td>13</td>
       <td><strong style="color: #1f77b4;">37</strong></td>
       <td><strong style="color: #ff7f0e;">-1</strong></td>
-      <td>123</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>112</td>
+      <td><strong style="color: #1f77b4;">19</strong></td>
     </tr>
   </tbody>
 </table>
@@ -866,7 +866,7 @@ This was the best pick available!
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
   </tbody>
 </table>
@@ -900,8 +900,8 @@ This was the best pick available!
       <td>14</td>
       <td><strong style="color: #1f77b4;">29</strong></td>
       <td><strong style="color: #ff7f0e;">-2</strong></td>
-      <td>126</td>
-      <td><strong style="color: #1f77b4;">8</strong></td>
+      <td>118</td>
+      <td><strong style="color: #1f77b4;">16</strong></td>
     </tr>
   </tbody>
 </table>
@@ -924,7 +924,7 @@ This was the best pick available!
       <td>80</td>
       <td>Tier 12</td>
       <td>145</td>
-      <td>125</td>
+      <td>128</td>
     </tr>
   </tbody>
 </table>
@@ -958,8 +958,8 @@ This was the best pick available!
       <td>14</td>
       <td><strong style="color: #1f77b4;">33</strong></td>
       <td>—</td>
-      <td>230</td>
-      <td><strong style="color: #ff7f0e;">-75</strong></td>
+      <td>212</td>
+      <td><strong style="color: #ff7f0e;">-57</strong></td>
     </tr>
   </tbody>
 </table>
@@ -982,7 +982,7 @@ This was the best pick available!
       <td>112</td>
       <td>Tier 14</td>
       <td>158</td>
-      <td>139</td>
+      <td>122</td>
     </tr>
   </tbody>
 </table>
@@ -1016,8 +1016,8 @@ This was the best pick available!
       <td>14</td>
       <td><strong style="color: #1f77b4;">46</strong></td>
       <td>—</td>
-      <td>139</td>
-      <td><strong style="color: #1f77b4;">19</strong></td>
+      <td>122</td>
+      <td><strong style="color: #1f77b4;">36</strong></td>
     </tr>
   </tbody>
 </table>
