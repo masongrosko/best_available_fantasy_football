@@ -1,6 +1,7 @@
 # best_available_fantasy_football
 
 Draft-day fantasy football ratings published with Hugo and GitHub Pages.
+https://masongrosko.github.io/best_available_fantasy_football/
 
 ## Generate a Sleeper draft report
 
