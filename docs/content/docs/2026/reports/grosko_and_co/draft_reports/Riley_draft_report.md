@@ -11,7 +11,7 @@ D
 
 ![D](/images/draft_grades/d.png)
 
-![rating_of_Riley_viz](../images/d60a082e-b009-46f2-97bd-62a8dc4391a1.png)
+![rating_of_Riley_viz](../images/35b7de6b-c12a-4d33-b3d8-bf0e2f217bc2.png)
 
 ### Full draft table {#full-draft-table-riley}
 

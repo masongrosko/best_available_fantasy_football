@@ -11,7 +11,7 @@ B
 
 ![B](/images/draft_grades/b.png)
 
-![rating_of_Ethan_viz](../images/ba4e7f7c-b0f0-40df-92d7-9df4bb864d97.png)
+![rating_of_Ethan_viz](../images/6951c835-d33f-4dd7-a9f0-d3a2d3b67e44.png)
 
 ### Full draft table {#full-draft-table-ethan}
 

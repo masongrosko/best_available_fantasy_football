@@ -11,7 +11,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![rating_of_Austin_viz](../images/1f72357a-e0cc-4df3-95aa-5ee49b6e10f6.png)
+![rating_of_Austin_viz](../images/ebdc3e96-2fe0-4a36-a181-504be86c49a3.png)
 
 ### Full draft table {#full-draft-table-austin}
 

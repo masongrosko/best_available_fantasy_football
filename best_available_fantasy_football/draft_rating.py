@@ -590,6 +590,18 @@ def summary_chart(merged, images_path, report):
     plt.savefig(images_path / fig_name)
     plt.cla()
 
+    ranking_fig_name = f"{uuid.uuid4()}.png"
+    ranking_plot = drafter_scores["Rank_Mean"].sort_values(ascending=False)
+    ranking_plot.plot.bar(
+        color=(ranking_plot > 0).map({True: "tab:blue", False: "tab:orange"}),
+        alpha=0.75,
+        rot=90,
+    ).get_figure()  # type: ignore
+    plt.ylabel("Mean Rank Delta")
+    plt.tight_layout()
+    plt.savefig(images_path / ranking_fig_name)
+    plt.cla()
+
     visible_scores = drafter_scores[
         ["Grade", "Grade_Delta", "ADP_Grade", "ADP_Delta"]
     ].rename(
@@ -632,6 +644,10 @@ def summary_chart(merged, images_path, report):
         )
     )
     report.append('{{< details "Ranking details" >}}')
+    report.append(
+        f"![ranking_summary_drafter_scores]"
+        f"(draft_reports/images/{ranking_fig_name})"
+    )
     report.append(
         ranking_details.reset_index().to_html(
             index=False, classes="ranking-details-table"

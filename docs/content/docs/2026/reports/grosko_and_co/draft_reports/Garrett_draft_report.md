@@ -11,7 +11,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![rating_of_Garrett_viz](../images/6a536edb-a01b-44e8-a985-84abd9afb65c.png)
+![rating_of_Garrett_viz](../images/c5c4ac3a-741b-47a8-93c0-f5734a893b47.png)
 
 ### Full draft table {#full-draft-table-garrett}
 

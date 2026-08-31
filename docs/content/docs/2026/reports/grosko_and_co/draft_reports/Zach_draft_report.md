@@ -11,7 +11,7 @@ D
 
 ![D](/images/draft_grades/d.png)
 
-![rating_of_Zach_viz](../images/ebb675d4-663c-43e0-b606-c6fe63ed132b.png)
+![rating_of_Zach_viz](../images/f37d8819-633e-4a1b-8b3e-287aca79700c.png)
 
 ### Full draft table {#full-draft-table-zach}
 

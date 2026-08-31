@@ -11,7 +11,7 @@ D
 
 ![D](/images/draft_grades/d.png)
 
-![rating_of_Ryan_viz](../images/9f618ac1-2fa5-47c7-93ef-7d16cc24cdb0.png)
+![rating_of_Ryan_viz](../images/7d46d2de-5e3a-44e9-b28e-bc05b22adf11.png)
 
 ### Full draft table {#full-draft-table-ryan}
 

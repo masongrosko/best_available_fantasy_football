@@ -11,7 +11,7 @@ C
 
 ![C](/images/draft_grades/c.png)
 
-![rating_of_Hannah_viz](../images/37d21ef6-b5ad-42f9-91af-7cfbc99d6f18.png)
+![rating_of_Hannah_viz](../images/02595048-5d3f-4e75-809e-534bfe319570.png)
 
 ### Full draft table {#full-draft-table-hannah}
 

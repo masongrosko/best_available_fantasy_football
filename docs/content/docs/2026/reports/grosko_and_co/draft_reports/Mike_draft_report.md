@@ -11,7 +11,7 @@ A
 
 ![A](/images/draft_grades/a.png)
 
-![rating_of_Mike_viz](../images/646c3989-c759-4387-9db9-f21202a2f148.png)
+![rating_of_Mike_viz](../images/cba80f22-8866-4006-8a39-1630f5181bc4.png)
 
 ### Full draft table {#full-draft-table-mike}
 

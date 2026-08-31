@@ -4,7 +4,7 @@ description: "2026 half-PPR draft ratings"
 weight: 10
 ---
 
-![summary_drafter_scores](draft_reports/images/e817517a-8d9e-4ceb-926f-efd06a910acb.png)
+![summary_drafter_scores](draft_reports/images/940d0d3d-16be-4183-84a9-3c929123a0fd.png)
 
 <table  class="dataframe draft-summary-table">
   <thead>
@@ -105,6 +105,8 @@ weight: 10
 </table>
 
 {{< details "Ranking details" >}}
+
+![ranking_summary_drafter_scores](draft_reports/images/76b721c6-9047-461b-872a-88c7af3a6b2b.png)
 
 <table  class="dataframe ranking-details-table">
   <thead>
