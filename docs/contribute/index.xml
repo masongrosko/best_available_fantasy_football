@@ -1,24 +1,18 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fantasy Football – Contribute</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/</link><description>Recent content in Contribute on Fantasy Football</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Setup Hugo Locally</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/setup_hugo_locally/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/setup_hugo_locally/</guid><description>
-&lt;p>I am using hugo to create the web documentation for this project. To contribute, you do not need Hugo installed locally, however it makes it a lot easier to visualize your changes when you can test them before pushing them.&lt;/p>
-&lt;h2 id="macos">MacOS&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew install go
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew install nodejs
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm install -g postcss postcss-cli autoprefixer
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="windows">Windows&lt;/h2>
-&lt;p>Get a package manager, to make this a lot easier. I use &lt;a href="https://scoop.sh/">scoop&lt;/a>.&lt;/p>
-&lt;h3 id="install-scoop">Install scoop&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser &lt;span style="color:#75715e"># Optional: Needed to run a remote script the first time&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>irm get.scoop.sh | iex
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="install-everything-for-hugo">Install everything for hugo&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>scoop install git
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>scoop install hugo-extended
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>scoop install go
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>scoop install nodejs
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm install -g postcss postcss-cli autoprefixer
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you already have the things installed, its a good idea to update them. Use &lt;code>update&lt;/code> instead of &lt;code>install&lt;/code> in all the appropriate commands.&lt;/p>
-&lt;h2 id="test">Test&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd github/repo/path
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd docs
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo server
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Grab the url from the terminal and open it in the browser.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contribute on Fantasy Football</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/</link><description>Recent content in Contribute on Fantasy Football</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup Hugo Locally</title><link>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/setup_hugo_locally/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://masongrosko.github.io/best_available_fantasy_football/docs/contribute/setup_hugo_locally/</guid><description>&lt;p&gt;I am using hugo to create the web documentation for this project. To contribute, you do not need Hugo installed locally, however it makes it a lot easier to visualize your changes when you can test them before pushing them.&lt;/p&gt;
+&lt;h2 id="macos"&gt;MacOS&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install go
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install nodejs
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g postcss postcss-cli autoprefixer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="windows"&gt;Windows&lt;/h2&gt;
+&lt;p&gt;Get a package manager, to make this a lot easier. I use &lt;a href="https://scoop.sh/"&gt;scoop&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="install-scoop"&gt;Install scoop&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser &lt;span style="color:#75715e"&gt;# Optional: Needed to run a remote script the first time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;irm get.scoop.sh | iex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="install-everything-for-hugo"&gt;Install everything for hugo&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;scoop install git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;scoop install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;scoop install go
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;scoop install nodejs
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g postcss postcss-cli autoprefixer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you already have the things installed, its a good idea to update them. Use &lt;code&gt;update&lt;/code&gt; instead of &lt;code&gt;install&lt;/code&gt; in all the appropriate commands.&lt;/p&gt;</description></item></channel></rss>
